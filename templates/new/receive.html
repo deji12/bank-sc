@@ -1,0 +1,126 @@
+{% include 'new/base.html' %}
+
+
+
+<div class="container">
+    <div class="page-header">
+        <h3 class="page-header__subtitle d-lg-none">Order Details</h3>
+        <h1 class="page-header__title">Account <span class="text-grey">Details</span></h1>
+    </div>
+    <div class="page-tools">
+        <div class="page-tools__breadcrumbs">
+            <div class="breadcrumbs">
+                <div class="breadcrumbs__container">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="index.html">
+                                <svg class="icon-icon-home breadcrumbs__icon">
+                                    <use xlink:href="#icon-home"></use>
+                                </svg>
+                                <svg class="icon-icon-keyboard-right breadcrumbs__arrow">
+                                    <use xlink:href="#icon-keyboard-right"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item disabled"><a class="breadcrumbs__link" href="#"><span>Dashboard</span>
+            <svg class="icon-icon-keyboard-right breadcrumbs__arrow">
+              <use xlink:href="#icon-keyboard-right"></use>
+            </svg></a>
+                        </li>
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="receive.html"><span>Receive Transaction</span>
+            <svg class="icon-icon-keyboard-right breadcrumbs__arrow">
+              <use xlink:href="#icon-keyboard-right"></use>
+            </svg></a>
+                        </li>
+                        <li class="breadcrumbs__item active"><span class="breadcrumbs__link">Details</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+    </div>
+    <div class="card card-order">
+        <div class="card__wrapper">
+            <section class="card-order__section pt-0">
+                <div class="card__container">
+                    <div class="card__header">
+                        <div class="row gutter-bottom-xs justify-content-between flex-grow-1">
+                            <div class="col">
+                                <h3 class="card__title">Checking Account</h3>
+                            </div>
+                            <!-- <div class="col-auto"><span class="card__date">Placed on 12.07.2018 10:00</span>
+                            </div> -->
+                        </div>
+                    </div>
+                    <ul class="card-order__customer-list">
+                        <li class="card-order__customer-item">
+                            <svg class="icon-icon-user">
+                                <use xlink:href="#icon-user"></use>
+                            </svg> <b>Name:</b>  <span>{{request.user.first_name}} {{request.user.last_name}}</span>
+                        </li>
+                        <!-- <li class="card-order__customer-item">
+                            <svg class="icon-icon-phone">
+                                <use xlink:href="#icon-phone"></use>
+                            </svg> <b>Phone:</b>  <a href="tel:0701234567">070 123 4567</a>
+                        </li> -->
+                        <li class="card-order__customer-item">
+                            <svg class="icon-icon-email">
+                                <use xlink:href="#icon-email"></use>
+                            </svg> <b>Email:</b>  <a href="mailto:example@mail.com">{{request.user.email}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card-order__section card-order__method">
+                <div class="card__container">
+                    <div class="row gutter-bottom-sm">
+                        <div class="col">
+                            <h3 class="card__title">Account Number</h3>
+                            <div class="card-order__payment">
+                                <div class="form-group">
+                                    <div class="input-group input-group--append">
+                                        
+                  </span>
+                                    </div>
+                                </div>
+                                <ul class="card-order__list">
+                                    <!-- <li><b>Acc ID:</b> 000001-TXHQ</li> -->
+                                    <li><b>Number:</b> {{account.account_no}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3 class="card__title">Routing Number</h3>
+                            <div class="card-order__shipping">
+                                <div class="form-group">
+                                    <div class="input-group input-group--append">
+                                        
+                  
+                                    </div>
+                                </div>
+                                <ul class="card-order__list">
+                                    <li><b>Gulf Bank Intercontinental Inc. Routing Number:</b> 111026177</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl card-order__method-status">
+                            <!-- <div class="card-order__status-panel">
+                                
+                                    </div> -->
+                                </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            
+        </div>
+    </div>
+</div>
+

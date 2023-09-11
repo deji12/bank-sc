@@ -1,0 +1,595 @@
+{% include 'new/base.html' %}
+
+
+
+<div class="container">
+    <div class="page-header">
+        <h1 class="page-header__title">Account</h1>
+    </div>
+    <div class="page-tools">
+        <div class="page-tools__breadcrumbs">
+            <div class="breadcrumbs">
+                <div class="breadcrumbs__container">
+                    <ol class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="index.html">
+                                <svg class="icon-icon-home breadcrumbs__icon">
+                                    <use xlink:href="#icon-home"></use>
+                                </svg>
+                                <svg class="icon-icon-keyboard-right breadcrumbs__arrow">
+                                    <use xlink:href="#icon-keyboard-right"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item disabled"><a class="breadcrumbs__link" href="#"><span>Dashboard</span>
+            <svg class="icon-icon-keyboard-right breadcrumbs__arrow">
+              <use xlink:href="#icon-keyboard-right"></use>
+            </svg></a>
+                        </li>
+                        <li class="breadcrumbs__item active"><span class="breadcrumbs__link">Account</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="page-tools__right">
+            <div class="page-tools__right-row">
+                <div class="page-tools__right-item"><a class="button-icon button-icon--grey-dark" href="#" data-modal="#accountEdit" data-toggle-tab="#accountDetails"><span class="button-icon__icon">
+          <svg class="icon-icon-task">
+            <use xlink:href="#icon-task"></use>
+          </svg></span></a>
+                </div>
+                <div class="page-tools__right-item"><a class="button-icon button-icon--grey-dark" href="#"><span class="button-icon__icon">
+          <svg class="icon-icon-trash">
+            <use xlink:href="#icon-trash"></use>
+          </svg></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="customer-account">
+        <div class="customer-account__item-1 customer-profile customer-card card">
+            <div class="card__wrapper">
+                <div class="card__container">
+                    <div class="card__body">
+                        <div class="customer-profile__avatar">
+                            <img style="border-radius: 50%;" src="https://res.cloudinary.com/the-proton-guy/image/upload/v1677255332/elearning/default/6215195_0_pjwqfq_kqj35n.webp" alt="#">
+                        </div>
+                        <br><h4 class="customer-profile__title">{{request.user.first_name}} {{request.user.last_name}}</h4>
+                        <div class="customer-profile__balance">
+                            <div class="label label--primary label--lg"><span class="label__icon">
+              <svg class="icon-icon-wallet">
+                <use xlink:href="#icon-wallet"></use>
+              </svg>{% load humanize %}</span> Balance: ${{account.balance|intcomma}}</div>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__container">
+                            <ul class="customer-profile__address">
+                                <li>
+                                    <svg class="icon-icon-location">
+                                        <use xlink:href="#icon-location"></use>
+                                    </svg>{{address.city}}, {{address.country}}
+                                </li>
+                                <li>
+                                    <svg class="icon-icon-email">
+                                        <use xlink:href="#icon-email"></use>
+                                    </svg> <a href="mailto:#">{{request.user.email}}</a>
+                                </li>
+                                <!-- <li>
+                                    <svg class="icon-icon-phone">
+                                        <use xlink:href="#icon-phone"></use>
+                                    </svg> <a href="tel:#">+1 (070) 123-4567</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="customer-account__item-2 customer-shipping customer-card card">
+            <div class="card__wrapper">
+                <div class="card__container">
+                    <div class="card__header">
+                        <div class="card__header-left">
+                            <h3 class="card__header-title">Billing Address</h3>
+                        </div>
+                        <div class="customer-card__header-right">
+                            <!-- <button class="button-icon button-icon--transparent" data-modal="#accountEdit" data-toggle-tab="#accountShippingAddress"><span class="button-icon__icon">
+              <svg class="icon-icon-task">
+                <use xlink:href="#icon-task"></use>
+              </svg></span>
+                            </button> -->
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <ul class="card-list">
+                            <li class="row row--xs">
+                                <div class="card-list__title col-auto">Address</div>
+                                <div class="card-list__value col">{{address.street_address}}</div>
+                            </li>
+                            <li class="row row--xs">
+                                <div class="card-list__title col-auto">City</div>
+                                <div class="card-list__value col">{{address.city}}</div>
+                            </li>
+                            <li class="row row--xs">
+                                <div class="card-list__title col-auto">Country</div>
+                                <div class="card-list__value col">{{address.country}}</div>
+                            </li>
+                            <li class="row row--xs">
+                                <div class="card-list__title col-auto">Zip code</div>
+                                <div class="card-list__value col">{{address.postal_code}}</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="customer-account__item-3 customer-payment customer-card card">
+            <div class="card__wrapper">
+                <div class="card__container">
+                    <div class="card__header">
+                        <div class="card__header-left">
+                            <h3 class="card__header-title">Payment methods</h3>
+                        </div>
+                        <div class="customer-card__header-right">
+                            <!-- <button class="button-icon button-icon--transparent" data-modal="#accountEdit" data-toggle-tab="#accountPayment"><span class="button-icon__icon">
+              <svg class="icon-icon-task">
+                <use xlink:href="#icon-task"></use>
+              </svg></span>
+                            </button> -->
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__credit-card">
+                            <div class="credit-card">
+                                <img class="credit-card__image" src="https://res.cloudinary.com/dtzxi7n7o/image/upload/v1672378419/credit-card_x1fkiz.svg" alt="#">
+                                <div class="credit-card__number-wrapper">
+                                    <input class="credit-card__number-input" type="text" value="0123456789101112" readonly="readonly">
+                                    <div class="credit-card__number">
+                                        <div class="credit-card__number-item" style="font-size: 15px;">
+                                            {% for i in first %}
+                                            {{i}}
+                                            {% endfor %}
+                                            </div>
+                                            <div class="credit-card__number-item" style="font-size: 15px;">{% for j in second %}{{j}}{% endfor %}</div>
+                                            <div class="credit-card__number-item" style="font-size: 15px;">{% for i in third %}{{i}}{% endfor %}</div>
+                                            <div class="credit-card__number-item" style="font-size: 15px;">{% for i in last %}{{i}}{% endfor %}</div>
+                                    </div>
+                                </div>
+                                <div class="credit-card__name">
+                                    <div class="credit-card__caption">Card Holder</div>{{request.user.first_name}} {{request.user.last_name}}
+                                </div>
+                                <div class="credit-card__date">
+                                    <div class="credit-card__caption">Expire</div><span>12/26</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__container">
+                            <div class="card__credit-list">
+                                <ul class="card-list">
+                                    <li class="row row--xs">
+                                        <div class="card-list__title col-auto">Card Type</div>
+                                        <div class="card-list__value col">VISA</div>
+                                    </li>
+                                    <li class="row row--xs">
+                                        <div class="card-list__title col-auto">Card Holder</div>
+                                        <div class="card-list__value col">{{request.user.first_name}} {{request.user.last_name}}</div>
+                                    </li>
+                                    <li class="row row--xs">
+                                        <div class="card-list__title col-auto">Expire</div>
+                                        <div class="card-list__value col">12/26 </div>
+                                    </li>
+                                    <li class="row row--xs">
+                                        <div class="card-list__title col-auto">Card Number</div>
+                                        <div class="card-list__value col">{% for j in first %}{{j}}{% endfor %}
+                                            {% for j in second %}{{j}}{% endfor %}
+                                            {% for j in third %}{{j}}{% endfor %} 
+                                            {% for j in last %}{{j}}{% endfor %}</div>
+                                    </li>
+                                    <li class="row row--xs">
+                                        <div class="card-list__title col-auto">Balance</div>
+                                        <div class="card-list__value col">${{account.balance|intcomma}}</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="customer-account__item-4 customer-wish-list customer-card card">
+            <div class="card__wrapper">
+                <div class="card__container">
+                    <div class="card__header">
+                        <div class="card__header-left">
+                            <h3 class="card__header-title">Wish List</h3>
+                        </div>
+                        <div class="customer-card__header-right">
+                            <div class="customer-wish-list__view">
+                                <div class="row row--xs">
+                                    <div class="col-auto"><span class="text-light-theme">3 Items</span>
+                                    </div>
+                                    <div class="col-auto"><a class="text-blue" href="customer-wishlist.html">View All</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <div class="customer-wish-list__product">
+                            <div class="customer-wish-list__product-image">
+                                <img src="img/content/product/thumb-2.jpg" srcset="img/content/product/thumb-2.jpg 2x" alt="#">
+                            </div>
+                            <div class="customer-wish-list__product-right">
+                                <ul class="customer-wish-list__params">
+                                    <li><b>Apple Watch Series 4</b>
+                                    </li>
+                                    <li>Product ID: 790841</li>
+                                    <li>Color: Gold</li>
+                                    <li>Size: 44mm</li>
+                                    <li>Price: $399</li>
+                                </ul>
+                                <div class="label label--primary">In Stock</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</div>
+</main>
+</div>
+<div class="modal modal-account modal-compact scrollbar-thin" id="accountEdit" data-simplebar="">
+<div class="modal__overlay" data-dismiss="modal"></div>
+<div class="modal__wrap">
+<div class="modal__window">
+    <div class="modal__content">
+        <button class="modal__close" data-dismiss="modal">
+            <svg class="icon-icon-cross">
+                <use xlink:href="#icon-cross"></use>
+            </svg>
+        </button>
+        <div class="modal__body">
+            <div class="modal-account__content">
+                <div class="modal-account__left">
+                    <div class="modal-account__upload profile-upload js-profile-upload">
+                        <input class="profile-upload__input" type="file" name="file_upload" accept="image/png, image/jpeg">
+                        <svg class="profile-upload__thumbnail" viewbox="0 0 252 272" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g filter="url(#filter0)">
+                                <path d="M55 199H197V221C197 221 153.752 224 126 224C98.248 224 55 221 55 221V199Z" fill="white"></path>
+                            </g>
+                            <g filter="url(#filter1)">
+                                <path d="M18.235 43.2287C19.2494 23.1848 35.1848 7.24941 55.2287 6.23501C76.8855 5.13899 104.551 4 126 4C147.449 4 175.114 5.13898 196.771 6.23501C216.815 7.24941 232.751 23.1848 233.765 43.2287C234.861 64.8855 236 92.5512 236 114C236 135.449 234.861 163.114 233.765 184.771C232.751 204.815 216.815 220.751 196.771 221.765C175.114 222.861 147.449 224 126 224C104.551 224 76.8855 222.861 55.2287 221.765C35.1848 220.751 19.2494 204.815 18.235 184.771C17.139 163.114 16 135.449 16 114C16 92.5512 17.139 64.8855 18.235 43.2287Z" fill="url(#pattern1)"></path>
+                            </g>
+                            <path class="profile-upload__overlay" opacity="0.6" d="M18.235 43.2287C19.2494 23.1848 35.1848 7.24941 55.2287 6.23501C76.8855 5.13899 104.551 4 126 4C147.449 4 175.114 5.13899 196.771 6.23501C216.815 7.24941 232.751 23.1848 233.765 43.2287C234.861 64.8855 236 92.5512 236 114C236 135.449 234.861 163.114 233.765 184.771C232.751 204.815 216.815 220.751 196.771 221.765C175.114 222.861 147.449 224 126 224C104.551 224 76.8855 222.861 55.2287 221.765C35.1848 220.751 19.2494 204.815 18.235 184.771C17.139 163.114 16 135.449 16 114C16 92.5512 17.139 64.8855 18.235 43.2287Z" fill="#44566C"></path>
+                            <defs>
+                                <filter id="filter0" x="23" y="183" width="206" height="89" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feflood flood-opacity="0" result="BackgroundImageFix"></feflood>
+                                    <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></fecolormatrix>
+                                    <feoffset dy="8"></feoffset>
+                                    <fegaussianblur stddeviation="8"></fegaussianblur>
+                                    <fecolormatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></fecolormatrix>
+                                    <feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feblend>
+                                    <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></fecolormatrix>
+                                    <feoffset dy="16"></feoffset>
+                                    <fegaussianblur stddeviation="16"></fegaussianblur>
+                                    <fecolormatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></fecolormatrix>
+                                    <feblend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"></feblend>
+                                    <feblend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"></feblend>
+                                </filter>
+                                <filter id="filter1" x="0" y="0" width="252" height="252" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feflood flood-opacity="0" result="BackgroundImageFix"></feflood>
+                                    <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></fecolormatrix>
+                                    <feoffset dy="12"></feoffset>
+                                    <fegaussianblur stddeviation="8"></fegaussianblur>
+                                    <fecolormatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"></fecolormatrix>
+                                    <feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feblend>
+                                    <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></fecolormatrix>
+                                    <feoffset dy="2"></feoffset>
+                                    <fegaussianblur stddeviation="2"></fegaussianblur>
+                                    <fecolormatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></fecolormatrix>
+                                    <feblend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"></feblend>
+                                    <feblend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"></feblend>
+                                </filter>
+                                <pattern id="pattern1" patterncontentunits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#profileImageAddPlaceholder" transform="scale(0.00142857)"></use>
+                                    <use xlink:href="#profileImageAdd" transform="scale(0.00142857)"></use>
+                                </pattern>
+                                <image id="profileImageAddPlaceholder" width="700" height="700" xlink:href='https://res.cloudinary.com/dtzxi7n7o/image/upload/v1672378639/placeholder_b8mkqr.svg'></image>
+                                <image id="profileImageAdd" class="profile-upload__image" width="700" height="700" xlink:href=''></image>
+                            </defs>
+                        </svg>
+                        <div class="profile-upload__label">
+                            <svg class="icon-icon-camera" width="50px" height="50px">
+                                <use xlink:href="#icon-camera"></use>
+                            </svg>
+                            <p class="mb-0">Click & Drop
+                                <br>to change photo</p>
+                        </div>
+                    </div>
+                    <div class="modal-account__tabs nav">
+                        <a class="modal-account__tab active" data-toggle="tab" href="#accountDetails">
+                            <svg class="icon-icon-details">
+                                <use xlink:href="#icon-details"></use>
+                            </svg>Account Details</a>
+                        <a class="modal-account__tab" data-toggle="tab" href="#accountShippingAddress">
+                            <svg class="icon-icon-truck">
+                                <use xlink:href="#icon-truck"></use>
+                            </svg>Shipping Address</a>
+                        <a class="modal-account__tab" data-toggle="tab" href="#accountPayment">
+                            <svg class="icon-icon-credit-card">
+                                <use xlink:href="#icon-credit-card"></use>
+                            </svg>Payment Methods</a>
+                    </div>
+                </div>
+                <div class="modal-account__right tab-content">
+                    <div class="modal-account__pane tab-pane show active" id="accountDetails">
+                        <div class="modal-account__pane-header">
+                            <h2>Account details</h2>
+                        </div>
+                        <form>
+                            <div class="row row--md">
+                                <div class="col-12 form-group form-group--lg">
+                                    <label class="form-label form-label--sm">First Name: *</label>
+                                    <div class="input-group">
+                                        <input class="input" type="text" placeholder="" value="Felecia" required="">
+                                    </div>
+                                </div>
+                                <div class="col-12 form-group form-group--lg">
+                                    <label class="form-label form-label--sm">Last Name: *</label>
+                                    <div class="input-group">
+                                        <input class="input" type="text" placeholder="" value="Burke" required="">
+                                    </div>
+                                </div>
+                                <div class="col-12 form-group form-group--lg">
+                                    <label class="form-label form-label--sm">E-Mail: *</label>
+                                    <div class="input-group">
+                                        <input class="input" type="email" placeholder="" value="example@mail.com" required="">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label form-label--sm">Date of Birth (optional):</label>
+                                    <div class="row row--md">
+                                        <div class="col-12 col-lg-4 form-group form-group--lg">
+                                            <div class="input-group input-group--append">
+                                                <select class="input js-input-select input--fluid" data-placeholder="">
+                                                    <option value="1" selected="selected">1
+                                                    </option>
+                                                    <option value="2">2
+                                                    </option>
+                                                    <option value="3">3
+                                                    </option>
+                                                    <option value="4">4
+                                                    </option>
+                                                    <option value="5">5
+                                                    </option>
+                                                    <option value="6">6
+                                                    </option>
+                                                    <option value="7">7
+                                                    </option>
+                                                    <option value="8">8
+                                                    </option>
+                                                    <option value="9">9
+                                                    </option>
+                                                    <option value="10">10
+                                                    </option>
+                                                    <option value="11">11
+                                                    </option>
+                                                    <option value="12">12
+                                                    </option>
+                                                    <option value="13">13
+                                                    </option>
+                                                    <option value="14">14
+                                                    </option>
+                                                    <option value="15">15
+                                                    </option>
+                                                    <option value="16">16
+                                                    </option>
+                                                    <option value="17">17
+                                                    </option>
+                                                    <option value="18">18
+                                                    </option>
+                                                    <option value="19">19
+                                                    </option>
+                                                    <option value="20">20
+                                                    </option>
+                                                    <option value="21">21
+                                                    </option>
+                                                    <option value="22">22
+                                                    </option>
+                                                    <option value="23">23
+                                                    </option>
+                                                    <option value="24">24
+                                                    </option>
+                                                    <option value="25">25
+                                                    </option>
+                                                    <option value="26">26
+                                                    </option>
+                                                    <option value="27">27
+                                                    </option>
+                                                    <option value="28">28
+                                                    </option>
+                                                </select><span class="input-group__arrow">
+                      <svg class="icon-icon-keyboard-down">
+                        <use xlink:href="#icon-keyboard-down"></use>
+                      </svg></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 form-group form-group--lg">
+                                            <div class="input-group input-group--append">
+                                                <select class="input js-input-select input--fluid" data-placeholder="">
+                                                    <option value="1" selected="selected">January
+                                                    </option>
+                                                    <option value="2">February
+                                                    </option>
+                                                    <option value="3">March
+                                                    </option>
+                                                    <option value="4">April
+                                                    </option>
+                                                    <option value="5">May
+                                                    </option>
+                                                    <option value="6">June
+                                                    </option>
+                                                    <option value="7">July
+                                                    </option>
+                                                    <option value="8">August
+                                                    </option>
+                                                    <option value="9">September
+                                                    </option>
+                                                    <option value="10">October
+                                                    </option>
+                                                    <option value="11">November
+                                                    </option>
+                                                    <option value="12">December
+                                                    </option>
+                                                </select><span class="input-group__arrow">
+                      <svg class="icon-icon-keyboard-down">
+                        <use xlink:href="#icon-keyboard-down"></use>
+                      </svg></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-4 form-group form-group--lg">
+                                            <div class="input-group input-group--append">
+                                                <select class="input js-input-select input--fluid" data-placeholder="">
+                                                    <option value="1" selected="selected">1990
+                                                    </option>
+                                                    <option value="2">1991
+                                                    </option>
+                                                    <option value="3">1992
+                                                    </option>
+                                                    <option value="4">1993
+                                                    </option>
+                                                    <option value="5">1994
+                                                    </option>
+                                                </select><span class="input-group__arrow">
+                      <svg class="icon-icon-keyboard-down">
+                        <use xlink:href="#icon-keyboard-down"></use>
+                      </svg></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 form-group form-group--lg">
+                                    <label class="form-label form-label--sm">Gender (optional):</label>
+                                    <div class="input-group input-group--append">
+                                        <select class="input js-input-select input--fluid" data-placeholder="">
+                                            <option value="1" selected="selected">Female
+                                            </option>
+                                            <option value="2">Male
+                                            </option>
+                                        </select><span class="input-group__arrow">
+                  <svg class="icon-icon-keyboard-down">
+                    <use xlink:href="#icon-keyboard-down"></use>
+                  </svg></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-account__form-submit">
+                                <button class="button button--primary button--load" type="submit"><span class="button__icon button__icon--left">
+                <svg class="icon-icon-refresh">
+                  <use xlink:href="#icon-refresh"></use>
+                </svg></span><span class="button__text">Update</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-account__pane tab-pane" id="accountShippingAddress">
+                        <div class="modal-account__pane-header">
+                            <h2>Shipping Address</h2>
+                        </div>
+                        <form>
+                            <div class="row row--md">
+                                <div class="col-12 form-group form-group--lg">
+                                    <label class="form-label form-label--sm">Country: *</label>
+                                    <div class="input-group">
+                                        <input class="input" type="text" placeholder="" value="Chine" required="">
+                                    </div>
+                                </div>
+                                <div class="col-12 form-group form-group--lg">
+                                    <label class="form-label form-label--sm">City: *</label>
+                                    <div class="input-group">
+                                        <input class="input" type="text" placeholder="" value="Beijing" required="">
+                                    </div>
+                                </div>
+                                <div class="col-12 form-group form-group--lg">
+                                    <label class="form-label form-label--sm">House Number and Street: *</label>
+                                    <div class="input-group">
+                                        <input class="input" type="text" placeholder="" value="898 Joanne Lane street" required="">
+                                    </div>
+                                </div>
+                                <div class="col-12 form-group form-group--lg">
+                                    <label class="form-label form-label--sm">ZIP Code: *</label>
+                                    <div class="input-group">
+                                        <input class="input js-zip-code" type="text" placeholder="" required="">
+                                    </div>
+                                </div>
+                                <div class="col-12 form-group form-group--lg">
+                                    <label class="form-label form-label--sm">Phone Number: *</label>
+                                    <div class="input-group">
+                                        <input class="input js-phone-number" type="text" placeholder="+1 (070) 123-4567" required="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-account__form-submit">
+                                <button class="button button--primary button--load" type="submit"><span class="button__icon button__icon--left">
+                <svg class="icon-icon-refresh">
+                  <use xlink:href="#icon-refresh"></use>
+                </svg></span><span class="button__text">Update</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-account__pane tab-pane" id="accountPayment">
+                        <div class="modal-account__pane-header">
+                            <h2>Payment methods</h2>
+                        </div>
+                        <form>
+                            <div class="row row--md">
+                                <div class="col-12 form-group form-group--lg">
+                                    <label class="form-label form-label--sm">Name on Card: *</label>
+                                    <div class="input-group">
+                                        <input class="input" type="text" placeholder="Felecia Burke" required="">
+                                    </div>
+                                </div>
+                                <div class="col-12 form-group form-group--lg">
+                                    <label class="form-label form-label--sm">Card Number: *</label>
+                                    <div class="input-group input-group--append">
+                                        <input class="input js-card-number" type="text" placeholder="****   ****   ****   1234" required=""><span class="input-group__append"><img class="add-card__input-number-logo" src="https://res.cloudinary.com/dtzxi7n7o/image/upload/v1672378702/visa-logo_dkfz6v.png" alt="#"></span>
+                                    </div>
+                                </div>
+                                <div class="col-12 form-group form-group--lg">
+                                    <label class="form-label form-label--sm">Expire Date</label>
+                                    <div class="input-group">
+                                        <input class="input js-card-date" type="text" placeholder="12/2020" required="">
+                                    </div>
+                                </div>
+                                <div class="col-12 form-group form-group--lg">
+                                    <label class="form-label form-label--sm">CVV Code <span class="badge-help" data-tippy-content="CVV Code" data-tippy-placement="top">
+                  <svg class="icon-icon-help">
+                    <use xlink:href="#icon-help"></use>
+                  </svg></span>
+                                    </label>
+                                    <div class="input-group"></div>
+                                    <input class="input js-card-cvv" type="text" placeholder="***" required="">
+                                </div>
+                            </div>
+                            <div class="modal-account__form-submit">
+                                <button class="button button--primary button--load" type="submit"><span class="button__icon button__icon--left">
+                <svg class="icon-icon-refresh">
+                  <use xlink:href="#icon-refresh"></use>
+                </svg></span><span class="button__text">Update</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>

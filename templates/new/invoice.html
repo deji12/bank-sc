@@ -1,0 +1,133 @@
+{% include "new/base.html"%}
+            <div class="container">
+                <div class="page-header">
+                    <h3 class="page-header__subtitle d-lg-none">Transfer Details</h3>
+                    <h1 class="page-header__title">Invoice <span class="text-grey">#10</span></h1>
+                </div>
+                <div class="page-tools">
+                    <div class="page-tools__breadcrumbs">
+                        <div class="breadcrumbs">
+                            <div class="breadcrumbs__container">
+                                <ol class="breadcrumbs__list">
+                                    <li class="breadcrumbs__item">
+                                        <a class="breadcrumbs__link" href="index.html">
+                                            <svg class="icon-icon-home breadcrumbs__icon">
+                                                <use xlink:href="#icon-home"></use>
+                                            </svg>
+                                            <svg class="icon-icon-keyboard-right breadcrumbs__arrow">
+                                                <use xlink:href="#icon-keyboard-right"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumbs__item disabled"><a class="breadcrumbs__link" href="#"><span>Dashboard</span>
+                        <svg class="icon-icon-keyboard-right breadcrumbs__arrow">
+                          <use xlink:href="#icon-keyboard-right"></use>
+                        </svg></a>
+                                    </li>
+                                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="invoice.html"><span>Invoice</span>
+                        <svg class="icon-icon-keyboard-right breadcrumbs__arrow">
+                          <use xlink:href="#icon-keyboard-right"></use>
+                        </svg></a>
+                                    </li>
+                                    <li class="breadcrumbs__item active"><span class="breadcrumbs__link">Invoice</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-tools__right">
+                        <div class="page-tools__right-row">
+                            <div class="page-tools__right-item"><a class="button-icon" href="#"><span class="button-icon__icon">
+                      <svg class="icon-icon-print">
+                        <use xlink:href="#icon-print"></use>
+                      </svg></span></a>
+                            </div>
+                            <div class="page-tools__right-item">
+                                <button class="button-icon" type="button"><span class="button-icon__icon">
+                      <svg class="icon-icon-trash">
+                        <use xlink:href="#icon-trash"></use>
+                      </svg></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-order order-invoice">
+                    <div class="card__wrapper">
+                        <div class="card__container">
+                            <div class="card__header">
+                                <div class="row gutter-bottom-xs justify-content-between flex-grow-1">
+                                    <div class="col">
+                                        <h2 class="order-invoice__title"><b class="text-uppercase">Invoice</b> <br> #{{transaction.id|truncatechars:6}}</h2>
+                                        <div class="order-invoice__address"><span class="text-grey-dark">Gulf Bank Intercontinental Inc.</span> 
+                                            <br>Representative Office:
+                                            Room 2, 3rd floor, Junction mall, Ngong Road, Nairobi, Kenya
+                                            <br> <a href="#">+254 751 999058</a> 
+                                            <br> <a href="#">info@gbhcoriolisbank.com</a> 
+                                            <!-- <br> <a href="#">www.basksbank.com</a> -->
+                                        </div>
+                                    </div>
+                                    <div class="order-invoice__header-right col-12 col-md-auto">
+                                        <div class="card__date"></div>
+                                        <div class="order-invoice__logo"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-order__product card-order__invoice-table scrollbar-thin scrollbar-visible" data-simplebar="">
+                            <table class="table table--lines table--groups table--striped">
+                                <colgroup>
+                                    <col class="colgroup-1">
+                                        <col class="colgroup-2">
+                                            <col class="colgroup-3">
+                                                <col>
+                                </colgroup>
+                                <thead class="table__header">
+                                    <tr>
+                                        <th><span class="text-nowrap">Transaction ID</span>
+                                        </th>
+                                        <th class="text-center"><span>Account Holder Name</span>
+                                        </th>
+                                        <th class="text-center"><span>Amount</span>
+                                        </th>
+                                        <th><span>TOTAL</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                {% load humanize %}
+                                <tbody>
+                                    <tr class="table__row">
+                                        <td class="table__td"><span class="text-light-theme">{{transaction.id}}</span>
+                                        </td>
+                                        <td class="table__td text-center text-dark-theme">{{transaction.recipient_name}}</td>
+                                        <td class="table__td text-center text-light-theme">${{transaction.amount}}</td>
+                                        <td class="table__td text-nowrap text-dark-theme">${{transaction.amount|intcomma}}</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-order__footer-total">
+                            <div class="card__container">
+                                <div class="row gutter-bottom-sm justify-content-end">
+                                    <div class="col-12 col-sm-auto">
+                                        <ul class="card-order__total">
+                                            <li class="card-order__total-item">
+                                                <div class="card-order__total-title">Subtotal:</div>
+                                                <div class="card-order__total-value">${{transaction.amount|intcomma}}</div>
+                                            </li>
+                                            
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

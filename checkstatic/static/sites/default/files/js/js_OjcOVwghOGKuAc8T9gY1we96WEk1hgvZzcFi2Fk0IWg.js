@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at https://www.baskbank.com/sites/default/files/cohesion/scripts/row-for-columns/row-for-columns.js. */
+(function($,Drupal,drupalSettings){'use strict';Drupal.behaviors.CohesionRowForColumns={attach:function(context,settings){$.each($('[data-coh-row-match-heights]',context).once('coh-row-match-heights-init'),function(){var targets=$(this).data('cohRowMatchHeights');$('> .coh-row-inner',this).cohesionContainerMatchHeights({targets:targets,context:context})})}}})(jQuery,Drupal,drupalSettings)
+/* Source and licensing information for the above line(s) can be found at https://www.baskbank.com/sites/default/files/cohesion/scripts/row-for-columns/row-for-columns.js. */;

@@ -1,0 +1,625 @@
+{% include 'new/base.html' %}
+
+{% load humanize %}
+
+<div class="container">
+    <div class="widgets">
+        <!-- <div class="widgets__row row gutter-bottom-xl">
+            <div class="col-12 col-sm-6 col-xl-4 d-flex">
+                <div class="widget">
+                    <div class="widget__wrapper">
+                        <div class="widget__row">
+                            <div class="widget__left">
+                                <h3 class="widget__title">Visits</h3>
+                                <div class="widget__status-title text-grey">Total visits today</div>
+                                <div class="widget__spacer"></div>
+                                <div class="widget__trade"><span class="widget__trade-count">4000</span><span class="trade-icon trade-icon--up">
+                <svg class="icon-icon-trade-up">
+                  <use xlink:href="#icon-trade-up"></use>
+                </svg></span><span class="badge badge--sm badge--green">7%</span>
+                                </div>
+                                <div class="widget__details"><a class="link-under text-grey" href="#">Detail</a>
+                                </div>
+                            </div>
+                            <div class="widget__chart">
+                                <div class="widget__chart-inner">
+                                    <div class="widget__chart-percentage">50<small>%</small>
+                                    </div>
+                                    <div class="widget__chart-caption">New Visits</div>
+                                </div>
+                                <div class="widget__chart-canvas js-progress-circle" data-value="0.5" data-color="#22CCE2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-4 d-flex">
+                <div class="widget">
+                    <div class="widget__wrapper">
+                        <div class="widget__row">
+                            <div class="widget__left">
+                                <h3 class="widget__title">Orders</h3>
+                                <div class="widget__status-title text-grey">Total visits today</div>
+                                <div class="widget__spacer"></div>
+                                <div class="widget__trade"><span class="widget__trade-count">1000</span><span class="trade-icon trade-icon--down">
+                <svg class="icon-icon-trade-down">
+                  <use xlink:href="#icon-trade-down"></use>
+                </svg></span><span class="badge badge--sm badge--red">3%</span>
+                                </div>
+                                <div class="widget__details"><a class="link-under text-grey" href="#">Detail</a>
+                                </div>
+                            </div>
+                            <div class="widget__chart">
+                                <div class="widget__chart-inner">
+                                    <div class="widget__chart-percentage">75<small>%</small>
+                                    </div>
+                                    <div class="widget__chart-caption">New Orders</div>
+                                </div>
+                                <div class="widget__chart-canvas js-progress-circle" data-value="0.75" data-color="#FDBF5E"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-4 d-flex">
+                <div class="widget">
+                    <div class="widget__wrapper">
+                        <div class="widget__row">
+                            <div class="widget__left">
+                                <h3 class="widget__title">Sales</h3>
+                                <div class="widget__status-title text-grey">Total visits today</div>
+                                <div class="widget__spacer"></div>
+                                <div class="widget__trade"><span class="widget__trade-count">$500</span><span class="trade-icon trade-icon--up">
+                <svg class="icon-icon-trade-up">
+                  <use xlink:href="#icon-trade-up"></use>
+                </svg></span><span class="badge badge--sm badge--green">9%</span>
+                                </div>
+                                <div class="widget__details"><a class="link-under text-grey" href="#">Detail</a>
+                                </div>
+                            </div>
+                            <div class="widget__chart">
+                                <div class="widget__chart-inner">
+                                    <div class="widget__chart-percentage">80<small>%</small>
+                                    </div>
+                                    <div class="widget__chart-caption">New Sales</div>
+                                </div>
+                                <div class="widget__chart-canvas js-progress-circle" data-value="0.8" data-color="#FF3D57"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    
+    
+    
+    <section class="section">
+        <div class="section__title d-none">
+            <h2>Section</h2>
+        </div>
+        <div class="row gutter-bottom-xl">
+            <div class="col-12 col-md-6 col-lg-7 col-xl-4 d-flex">
+                <div class="card">
+                    <div class="card__wrapper">
+                        <div class="card__container">
+                            <div class="card__header">
+                                <div class="card__header-left">
+                                    <h3 class="card__header-title">Credit Card</h3>
+                                </div>
+                                <div class="card__tools-more">
+                                    <button class="items-more__button">
+                                        <svg class="icon-icon-more">
+                                            <use xlink:href="#icon-more"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="dropdown-items">
+                                        <div class="dropdown-items__container">
+                                            <ul class="dropdown-items__list">
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                          <svg class="icon-icon-refresh">
+                            <use xlink:href="#icon-refresh"></use>
+                          </svg></span>Refresh</a>
+                                                </li>
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                          <svg class="icon-icon-settings">
+                            <use xlink:href="#icon-settings"></use>
+                          </svg></span>Settings</a>
+                                                </li>
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                          <svg class="icon-icon-download">
+                            <use xlink:href="#icon-download"></use>
+                          </svg></span>Download</a>
+                                                </li>
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                          <svg class="icon-icon-action">
+                            <use xlink:href="#icon-action"></use>
+                          </svg></span>Action</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__credit-card">
+                                    <div class="credit-card">
+                                        <img class="credit-card__image" src="https://res.cloudinary.com/dtzxi7n7o/image/upload/v1672378419/credit-card_x1fkiz.svg" alt="#">
+                                        <div class="credit-card__number-wrapper">
+                                            <input class="credit-card__number-input" type="text" value="0123456789101112" readonly="readonly">
+                                            <div class="credit-card__number">
+                                                <div class="credit-card__number-item" style="font-size: 15px;">
+                                                {% for i in first %}
+                                                {{i}}
+                                                {% endfor %}
+                                                </div>
+                                                <div class="credit-card__number-item" style="font-size: 15px;">{% for j in second %}{{j}}{% endfor %}</div>
+                                                <div class="credit-card__number-item" style="font-size: 15px;">{% for i in third %}{{i}}{% endfor %}</div>
+                                                <div class="credit-card__number-item" style="font-size: 15px;">{% for i in last %}{{i}}{% endfor %}</div>
+                                            </div>
+                                        </div>
+                                        <div class="credit-card__name">
+                                            <div class="credit-card__caption">Card Holder</div>{{request.user.first_name}} {{request.user.last_name}}
+                                        </div>
+                                        <div class="credit-card__date">
+                                            <div class="credit-card__caption">Expire</div><span>12/26</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__container">
+                                    <div class="card__credit-list">
+                                        <ul class="card-list">
+                                            <li class="row row--xs">
+                                                <div class="card-list__title col-auto">Card Type</div>
+                                                <div class="card-list__value col">VISA</div>
+                                            </li>
+                                            <li class="row row--xs">
+                                                <div class="card-list__title col-auto">Card Holder</div>
+                                                <div class="card-list__value col">{{request.user.first_name}} {{request.user.last_name}}</div>
+                                            </li>
+                                            <li class="row row--xs">
+                                                <div class="card-list__title col-auto">Expire</div>
+                                                <div class="card-list__value col">12/26</div>
+                                            </li>
+                                            <li class="row row--xs">
+                                                <div class="card-list__title col-auto">Card Number</div>
+                                                <div class="card-list__value col">
+                                                    {% for j in first %}{{j}}{% endfor %}
+                                                    {% for j in second %}{{j}}{% endfor %}
+                                                    {% for i in third %}{{i}}{% endfor %} 
+                                                    {% for i in last %}{{i}}{% endfor %}</div>
+                                            </li>
+                                            <li class="row row--xs">
+                                                <div class="card-list__title col-auto">Balance</div>
+                                                <div class="card-list__value col">${{account.balance|intcomma}}</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 col-xl-4 d-flex">
+                <div class="card">
+                    <div class="card__wrapper">
+                        <div class="card__container">
+                            <div class="card__header">
+                                <div class="card__header-left">
+                                    <h3 class="card__header-title">Report Lost/Stolen</h3>
+                                </div>
+                                <div class="card__tools-more">
+                                    <button class="items-more__button">
+                                        <svg class="icon-icon-more">
+                                            <use xlink:href="#icon-more"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="dropdown-items">
+                                        <div class="dropdown-items__container">
+                                            <ul class="dropdown-items__list">
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                          <svg class="icon-icon-refresh">
+                            <use xlink:href="#icon-refresh"></use>
+                          </svg></span>Refresh</a>
+                                                </li>
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                          <svg class="icon-icon-settings">
+                            <use xlink:href="#icon-settings"></use>
+                          </svg></span>Settings</a>
+                                                </li>
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                          <svg class="icon-icon-download">
+                            <use xlink:href="#icon-download"></use>
+                          </svg></span>Download</a>
+                                                </li>
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                          <svg class="icon-icon-action">
+                            <use xlink:href="#icon-action"></use>
+                          </svg></span>Action</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <form class="add-card js-add-card-form" method="POST">
+                                    <div class="form-group">
+                                        <label class="form-label">Name on Card</label>
+                                        <div class="input-group">
+                                            <input class="input" type="text" placeholder="Mark Anderson" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Card Number</label>
+                                        <div class="input-group input-group--append">
+                                            <input class="input js-card-number" type="text" placeholder="****   ****   ****   1234" required="required"><span class="input-group__append"><img class="add-card__input-number-logo" src="https://res.cloudinary.com/dtzxi7n7o/image/upload/v1672378702/visa-logo_dkfz6v.png" alt="#"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row row--sm">
+                                        <div class="form-group col">
+                                            <label class="form-label">Expire Date</label>
+                                            <div class="input-group">
+                                                <input class="input js-card-date" type="text" placeholder="12/2020" required="required">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col">
+                                            <label class="form-label">CVV Code</label>
+                                            <div class="input-group">
+                                                <input class="input js-card-cvv" type="text" placeholder="***" required="required">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add-card__submit">
+                                        <button class="button button--primary button--block" type="submit"><span class="button__icon button__icon--left">
+                    <svg class="icon-icon-plus">
+                      <use xlink:href="#icon-plus"></use>
+                    </svg></span><span class="button__text">Report</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-12 col-xl-4 d-flex">
+                <div class="card">
+                    <div class="card__wrapper">
+                        <div class="card__container">
+                            <div class="card__header">
+                                <div class="card__header-left">
+                                    <h3 class="card__header-title">Virtual Card</h3>
+                                </div>
+                                <div class="card__tools-more">
+                                    <button class="items-more__button">
+                                        <svg class="icon-icon-more">
+                                            <use xlink:href="#icon-more"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="dropdown-items">
+                                        <div class="dropdown-items__container">
+                                            <ul class="dropdown-items__list">
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                          <svg class="icon-icon-refresh">
+                            <use xlink:href="#icon-refresh"></use>
+                          </svg></span>Refresh</a>
+                                                </li>
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                          <svg class="icon-icon-settings">
+                            <use xlink:href="#icon-settings"></use>
+                          </svg></span>Settings</a>
+                                                </li>
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                          <svg class="icon-icon-download">
+                            <use xlink:href="#icon-download"></use>
+                          </svg></span>Download</a>
+                                                </li>
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                          <svg class="icon-icon-action">
+                            <use xlink:href="#icon-action"></use>
+                          </svg></span>Action</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__new-credits card__scrollbar scrollbar-thin scrollbar-visible" data-simplebar="data-simplebar">
+                                    <div class="card__container">
+                                        <div class="card__credits-items row">
+                                            <div class="card__credits-item col-auto">
+                                                <div class="credit-card credit-card--light">
+                                                    <img class="credit-card__image credit-card__image--light" src="https://res.cloudinary.com/dtzxi7n7o/image/upload/v1672378523/credit-visa_g0v73p.svg" alt="#">
+                                                    <img class="credit-card__image credit-card__image--dark" src="img/content/credit-visa-dark.svg" alt="#">
+                                                    <div class="credit-card__number-wrapper">
+                                                        <input class="credit-card__number-input" type="text" value="0123456789101112" readonly="readonly">
+                                                        <div class="credit-card__number">
+                                                            <div class="credit-card__number-item" style="font-size: 15px;">{% for i in vir1 %}{{i}}{% endfor %}</div>
+                                                            <div class="credit-card__number-item" style="font-size: 15px;">{% for i in vir2 %}{{i}}{% endfor %}</div>
+                                                            <div class="credit-card__number-item" style="font-size: 15px;">{% for i in vir3 %}{{i}}{% endfor %}</div>
+                                                            <div class="credit-card__number-item" style="font-size: 15px;">{% for i in vir4 %}{{i}}{% endfor %}</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="credit-card__name">
+                                                        <div class="credit-card__caption">Card Holder</div>{{request.user.first_name}} {{request.user.last_name}}
+                                                    </div>
+                                                    <div class="credit-card__date">
+                                                        <div class="credit-card__caption">Expire</div><span>12/26</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card__credits-item col-auto">
+                                                <div class="credit-card credit-card--light">
+                                                    <img class="credit-card__image credit-card__image--light" src="https://res.cloudinary.com/dtzxi7n7o/image/upload/v1672378474/credit-mastercard_k0ueag.svg" alt="#">
+                                                    <img class="credit-card__image credit-card__image--dark" src="img/content/credit-mastercard-dark.svg" alt="#">
+                                                    <div class="credit-card__number-wrapper">
+                                                        <input class="credit-card__number-input" type="text" value="0123456789101112" readonly="readonly">
+                                                        <div class="credit-card__number">
+                                                            <div class="credit-card__number-item" style="font-size: 15px;">{% for i in mas1 %}{{i}}{% endfor %}</div>
+                                                            <div class="credit-card__number-item" style="font-size: 15px;">{% for i in mas2 %}{{i}}{% endfor %}</div>
+                                                            <div class="credit-card__number-item" style="font-size: 15px;">{% for i in mas3 %}{{i}}{% endfor %}</div>
+                                                            <div class="credit-card__number-item" style="font-size: 15px;">{% for i in mas4 %}{{i}}{% endfor %}</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="credit-card__name">
+                                                        <div class="credit-card__caption">Card Holder</div>{{request.user.first_name}} {{request.user.last_name}}
+                                                    </div>
+                                                    <div class="credit-card__date">
+                                                        <div class="credit-card__caption">Expire</div><span>12/26</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__footer card__footer--md">
+                                <div class="card__container">
+                                    <div class="card__credit-button">
+                                        <button class="button button--primary button--block" type="button"><span class="button__icon button__icon--left">
+                    <svg class="icon-icon-plus">
+                      <use xlink:href="#icon-plus"></use>
+                    </svg></span><span class="button__text">Request New VCC</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section__title d-none">
+            <h2>Section</h2>
+        </div>
+        <div class="row gutter-bottom-xl">
+            <div class="col-12 col-lg-7 col-xl-8 d-flex">
+                <div class="card card--lg">
+                    <div class="card__wrapper">
+                        <div class="card__container">
+                            <div class="card__header">
+                                <div class="card__header-left">
+                                    <h3 class="card__header-title">Checking Account</h3>
+                                </div>
+                                <!-- <div class="card__tools">
+                                    <div class="card__tools-row row row--xs gutter-bottom-xs">
+                                        <div class="card__tools-switcher col">
+                                            <div class="switcher-button">
+                                                <div class="switcher-button__items">
+                                                    <div class="switcher-button__float"></div>
+                                                    <div class="switcher-button__item">
+                                                        <button class="switcher-button__btn">Daily</button>
+                                                    </div>
+                                                    <div class="switcher-button__item active">
+                                                        <button class="switcher-button__btn">Weekly</button>
+                                                    </div>
+                                                    <div class="switcher-button__item">
+                                                        <button class="switcher-button__btn">Monthly</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="card__tools-more">
+                                    <button class="items-more__button">
+                                        <svg class="icon-icon-more">
+                                            <use xlink:href="#icon-more"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="dropdown-items">
+                                        <div class="dropdown-items__container">
+                                            <ul class="dropdown-items__list">
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                          <svg class="icon-icon-refresh">
+                            <use xlink:href="#icon-refresh"></use>
+                          </svg></span>Refresh</a>
+                                                </li>
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                          <svg class="icon-icon-settings">
+                            <use xlink:href="#icon-settings"></use>
+                          </svg></span>Settings</a>
+                                                </li>
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                          <svg class="icon-icon-download">
+                            <use xlink:href="#icon-download"></use>
+                          </svg></span>Download</a>
+                                                </li>
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                          <svg class="icon-icon-action">
+                            <use xlink:href="#icon-action"></use>
+                          </svg></span>Action</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__widgets">
+                                    <div class="card__widgets-row gutter-bottom-sm">
+                                        <div class="card-widget card-widget--xl">
+                                            <h4 class="card-widget__title">Total Balance</h4>
+                                            <div class="card-widget__trade"><span class="card-widget__count">${{account.balance|intcomma}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__countries-progressbar">
+                                    <div class="progressbar progressbar--stacked progressbar--axis-top progressbar--lg">
+                                        <div class="progressbar__items">
+                                            <div class="progressbar__bar progressbar__bar--green" style="width: 40%;"><span class="progressbar__bar-count">$70,000</span>
+                                            </div>
+                                            <div class="progressbar__bar progressbar__bar--orange" style="width: 20%;"><span class="progressbar__bar-count">$55,000</span>
+                                            </div>
+                                            <div class="progressbar__bar progressbar__bar--red" style="width: 20%;"><span class="progressbar__bar-count">$40,000</span>
+                                            </div>
+                                            <div class="progressbar__bar progressbar__bar--orange-dark" style="width: 10%;"><span class="progressbar__bar-count">$25,000</span>
+                                            </div>
+                                            <div class="progressbar__bar progressbar__bar--teal" style="width: 10%;"><span class="progressbar__bar-count">$20,000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__footer card__footer--lg">
+                                <div class="card__container">
+                                    <div class="country-legend">
+                                        <div class="country-legend__row">
+                                            <div class="country-legend__item">
+                                                <div class="country-legend__left"><span class="country-legend__marker color-green"></span><span class="country-legend__name">Russia</span>
+                                                </div>
+                                                <div class="country-legend__trade"><span class="country-legend__quot quotation quotation--up">
+                        <svg class="icon-icon-arrow-down">
+                          <use xlink:href="#icon-arrow-down"></use>
+                        </svg></span><span class="country-legend__percentage">40%</span>
+                                                </div>
+                                            </div>
+                                            <div class="country-legend__item">
+                                                <div class="country-legend__left"><span class="country-legend__marker color-orange"></span><span class="country-legend__name">Australia</span>
+                                                </div>
+                                                <div class="country-legend__trade"><span class="country-legend__quot quotation quotation--down">
+                        <svg class="icon-icon-arrow-down">
+                          <use xlink:href="#icon-arrow-down"></use>
+                        </svg></span><span class="country-legend__percentage">20%</span>
+                                                </div>
+                                            </div>
+                                            <div class="country-legend__item">
+                                                <div class="country-legend__left"><span class="country-legend__marker color-red"></span><span class="country-legend__name">China</span>
+                                                </div>
+                                                <div class="country-legend__trade"><span class="country-legend__quot quotation quotation--up">
+                        <svg class="icon-icon-arrow-down">
+                          <use xlink:href="#icon-arrow-down"></use>
+                        </svg></span><span class="country-legend__percentage">20%</span>
+                                                </div>
+                                            </div>
+                                            <div class="country-legend__item">
+                                                <div class="country-legend__left"><span class="country-legend__marker color-orange-dark"></span><span class="country-legend__name">France</span>
+                                                </div>
+                                                <div class="country-legend__trade"><span class="country-legend__quot quotation quotation--down">
+                        <svg class="icon-icon-arrow-down">
+                          <use xlink:href="#icon-arrow-down"></use>
+                        </svg></span><span class="country-legend__percentage">10%</span>
+                                                </div>
+                                            </div>
+                                            <div class="country-legend__item">
+                                                <div class="country-legend__left"><span class="country-legend__marker color-teal"></span><span class="country-legend__name">USA</span>
+                                                </div>
+                                                <div class="country-legend__trade"><span class="country-legend__quot quotation quotation--up">
+                        <svg class="icon-icon-arrow-down">
+                          <use xlink:href="#icon-arrow-down"></use>
+                        </svg></span><span class="country-legend__percentage">10%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5 col-xl-4 d-flex">
+                <div class="card card--right pb-0">
+                    <div class="card__wrapper">
+                        <div class="card__container">
+                            <div class="card__header">
+                                <div class="card__header-left">
+                                    <h3 class="card__header-title">Recent Transactions</h3>
+                                </div>
+                                <div class="card__tools-more">
+                                    <button class="items-more__button">
+                                        <svg class="icon-icon-more">
+                                            <use xlink:href="#icon-more"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="dropdown-items">
+                                        <div class="dropdown-items__container">
+                                            <ul class="dropdown-items__list">
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                                                    <svg class="icon-icon-refresh">
+                                                        <use xlink:href="#icon-refresh"></use>
+                                                    </svg></span>Refresh</a>
+                                                </li>
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                                                    <svg class="icon-icon-settings">
+                                                        <use xlink:href="#icon-settings"></use>
+                                                    </svg></span>Settings</a>
+                                                </li>
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                                                    <svg class="icon-icon-download">
+                                                        <use xlink:href="#icon-download"></use>
+                                                    </svg></span>Download</a>
+                                                </li>
+                                                <li class="dropdown-items__item"><a class="dropdown-items__link"><span class="dropdown-items__link-icon">
+                                                    <svg class="icon-icon-action">
+                                                        <use xlink:href="#icon-action"></use>
+                                                    </svg></span>Action</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__transactions card__scrollbar scrollbar-thin scrollbar-visible" data-simplebar="data-simplebar">
+                                    <div class="card-transactions">
+                                    {% for i in histroy %}
+                                        <div class="card-transactions__item">
+                                            <div class="card-transactions__left">
+                                                <div class="card-transactions__icon">
+                                                    <svg class="icon-icon-bill">
+                                                        <use xlink:href="#icon-bill"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="card-transactions__right">
+                                                    <h5 class="card-transactions__title">{{i.get_transaction_type_display}}</h5><span class="card-transactions__time">{{i.timestamp}}</span>
+                                                </div>
+                                            </div>
+                                            <div class="card-transactions__details">
+                                                <div class="card-transactions__cost">${{i.amount|intcomma}}</div><a class="text-sm text-grey link-under" href="#"></a>
+                                            </div>
+                                        </div>
+                                    {% endfor %}   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+</div>
+</main>
+</div>
