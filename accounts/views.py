@@ -97,7 +97,7 @@ class LogoutView(RedirectView):
 
 def LogOutView(request):
     logout(request)
-    return redirect('coapp-login')
+    return redirect('core-login')
 
 @login_required
 def ProfileView(request):

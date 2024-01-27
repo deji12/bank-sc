@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect
 from accounts.models import *
 from django.contrib.auth import login
 from .auth import authenticate
-from django.http import HttpResponse
 from django.contrib import messages
 
 def Register(request):
@@ -40,7 +39,8 @@ def Register(request):
             first_name = first_name,
             last_name = surname,
             account_type = account_type,
-            password=password
+            password=password,
+            is_active = False
         )
         
         new_user.save()
@@ -84,12 +84,16 @@ def Login(request):
 
         authenticate_user = authenticate(email=email, password=password)
         if authenticate_user is not None:
-            login(request, authenticate_user)
+            if authenticate_user.is_active:
+                login(request, authenticate_user)
 
-            if 'next' in request.POST:
-                return redirect(request.POST['next'])
+                if 'next' in request.POST:
+                    return redirect(request.POST['next'])
+                else:
+                    return redirect('accounts:home')
             else:
-                return redirect('accounts:home')
+                messages.error(request, 'Your application is being reviewed. Wait 2-3 days then our specialists will contact you using the provided information')
+                return redirect('coapp-login')
         else:
             messages.error(request, 'You have provided invalid login credentials')
             return redirect('coapp-login')

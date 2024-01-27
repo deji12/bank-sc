@@ -86,7 +86,7 @@ class UserBankAccount(models.Model):
     master_card_number = models.CharField(max_length=225, default=ccard.mastercard(), null=True, blank=True)
     account_no = models.PositiveIntegerField(unique=True, null=True, blank=True)
     gender = models.CharField(max_length=1, choices=GENDER_CHOICE)
-    birth_date = models.DateField(null=True, blank=True)
+    birth_date = models.CharField(null=True, blank=True, max_length=225)
     balance = models.DecimalField(
         default=0,
         max_digits=12,
@@ -159,6 +159,7 @@ class UserAddress(models.Model):
     )
     image = models.FileField(upload_to='profiles', blank=True, null=True)
     street_address = models.CharField(max_length=512)
+    address_2 = models.CharField(max_length=225, null=True, blank=True)
     city = models.CharField(max_length=256)
     postal_code = models.PositiveIntegerField()
     country = models.CharField(max_length=256)

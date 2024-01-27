@@ -1,0 +1,58 @@
+
+<!-- saved from url=(0593)https://servedby.flashtalking.com/container/14788;111062;11512;iframe/?ftXRef=[%INSERT_TRANSACTION_ID_HERE%]&ftXValue=[%INSERT_TRANSACTION_VALUE_HERE%]&ftXType=[%INSERT_TRANSACTION_TYPE_HERE%]&ftXName=[%INSERT_TRANSACTION_NAME_HERE%]&ftXNumItems=[%INSERT_TRANSACTION_QUANTITY_HERE%]&ftXCurrency=[%INSERT_TRANSACTION_CURRENCY_HERE%]&U1=[gtm.js]&U2=[join.Gulf Bank]&U3=[/product]&U4=[https://join.Gulf Bank/product?product=600813e8-ca91-4980-8f70-ed8fdf520505]&U5=[]&ft_referrer=https%3A//join.Gulf Bank/product%3Fproduct%3D600813e8-ca91-4980-8f70-ed8fdf520505&ns=&cb=480912.24584779056 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
+
+<script>var urlHarvest = true;</script>
+<script>
+//Pixel Manager | Export Date: Jan. 27, 2022 @ 3:33pm UTC
+var ft_hSeg = {
+    ref_url:document.referrer,
+    ref_protocol:'',
+    ref_domain:'',
+    ref_path:'',
+    ref_queryStr:'',
+    spot_gID:'11512',
+    seg_set_QStr:false,
+    seg_uri:'',
+    seg_dom:'',
+    ad_domains:['servedby.flashtalking.com','servedby.flashtalking.com'],
+    parseUri:function(str){
+            var o = this,
+              splitObj = /^(http[s]?):\/\/?([^\/\s]+)\/([\w\.]+[^#?;\s]+)(.*)?/.exec(str);
+              if(splitObj===null) return false;
+            var retObj = {
+                  protocol:splitObj[1],
+                  domain:splitObj[2],
+                  path:splitObj[3],
+                  queryString:splitObj[4]
+                  }
+            return retObj;
+        },
+    set_seg:function(run){
+                            if(run == false) { return false };
+                var split_obj = this.parseUri(this.check_ref(this.ref_url)),
+                  seg_path = '/segment/2/read/a;;pixel/?s='+this.spot_gID+'&d=';
+                if(split_obj===false) return false;
+                this.ref_protocol = 'https';
+                this.ref_domain = split_obj.domain;
+                this.ref_queryStr = split_obj.queryString;
+                this.ref_path = split_obj.path.replace(new RegExp(decodeURIComponent('%5E/%7C/%24/g')), '');
+                this.seg_dom = this.ad_domains[(this.ref_protocol == 'http')? 0 : 1];
+                this.seg_uri = this.ref_protocol+'://'+this.seg_dom+seg_path+this.ref_domain+'&r='+this.ref_path+(this.seg_set_QStr?'&q='+decodeURIComponent(this.ref_queryStr):'');
+                new Image().src=this.seg_uri;
+                return true;
+            },
+    check_ref:function(url){
+            var st=window.location.search.indexOf('ft_referrer=')+12,
+                en=(window.location.search.substring(st)).indexOf('&ns=');
+                if(en === -1) en = 9e9;
+                cont_ref = decodeURIComponent(window.location.search.substring(st,en+st));
+            if (url === ''|| this.ref_url !== cont_ref){
+                return  cont_ref;
+            }else{
+                return this.ref_url;
+            }
+    }
+  };
+  ft_hSeg.set_seg(urlHarvest);
+</script></body></html>

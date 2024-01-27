@@ -7,18 +7,19 @@
     <meta name="MobileOptimized" content="320" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bask Bank | Dashboard</title>
+    <title>Gulf Bank  | Dashboard</title>
+    {% load static %}
     <meta name="description" content=" — This is the best dashboard" />
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="application-name" content=" — This is the best dashboard" />
-    <meta name="apple-mobile-web-app-title" content="Bask Bank | Dashboard" />
+    <meta name="apple-mobile-web-app-title" content="Gulf Bank  | Dashboard" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link rel="stylesheet" href="https://res.cloudinary.com/dtzxi7n7o/raw/upload/v1672376634/vendor.min_nb09m8.css" />
     <link rel="stylesheet" href="https://res.cloudinary.com/dtzxi7n7o/raw/upload/v1672376635/common_v6d1sg.css" />
 
-    <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dtzxi7n7o/image/upload/v1672376698/favicon_wb0nat.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.gib.com/sites/all/themes/gib/favicon.ico" />
     <!-- <link rel="manifest" href="img/content/favicons/manifest.json" />-->
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
@@ -528,7 +529,7 @@
             <div class="page-auth__center">
                 <div class="page-auth__screen">
                     <div class="auth-logo">
-                        <img class="auth-logo__icon" src="https://res.cloudinary.com/dtzxi7n7o/image/upload/v1672378827/logo_isebo8.svg" width="100" alt="#" />
+                        <img class="auth-logo__icon" src="{% static 'newest/gib3.png' %}" width="100" alt="#" />
                         <div class="auth-logo__text"></div>
                     </div>
                     <img class="page-auth__screen-bg auth-bg-image-light" src="https://res.cloudinary.com/dtzxi7n7o/image/upload/v1672380082/auth-bg_l615dw.jpg" alt="#">
@@ -539,7 +540,7 @@
                         <div class="auth-card__left">
                             <div class="auth-card__logo">
                                 <div class="auth-logo">
-                                    <img class="auth-logo__icon" src="https://res.cloudinary.com/dtzxi7n7o/image/upload/v1672378827/logo_isebo8.svg" width="100" alt="#" />
+                                    <img class="auth-logo__icon" style="width: 80%;" src="{% static 'newest/gib3.png' %}" width="100" alt="#" />
                                     <div class="auth-logo__text"></div>
                                 </div>
                             </div>
@@ -549,15 +550,15 @@
                         <form class="auth-card__right" method="POST">
                             {% csrf_token %}
                             <div class="auth-card__top">
+                                <h1 class="auth-card__title">Welcome to <span style="color: #f36a20;">Gulf Bank </span></h1>
                                 {% if messages %}
                                     {% for message in messages %}
                                         <h1 class="auth-card__title"> <span style="color: firebrick;">{{message}}</span></h1>
                                     {% endfor %}
-                                {% else %}
-                                    <h1 class="auth-card__title">Welcome to <span class="text-theme">Bask Bank</span></h1>
                                 {% endif %}
-                                <p class="auth-card__text">Welcome Back, Please login
-                                    <br>to your account.</p>
+                                <p class="auth-card__text">Welcome Back, login
+                                    to your account.</p>
+                                    <p class="auth-card__text">Don't have an account? <a href="{% url 'core-register' %}" style="color: #f36a20;">Register</a>.</p>
                             </div>
                             <div class="auth-card__body">
                                 <div class="form-group">
@@ -565,7 +566,7 @@
                                         <svg class="icon-icon-user">
                                         <use xlink:href="#icon-user"></use>
                                         </svg></span>
-                                        <input class="input" name="email" type="email" value="example@mail.com" required>
+                                        <input class="input" name="email" type="email" placeholder="example@mail.com" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -599,7 +600,7 @@
                                     <!-- <div class="auth-card__button"><a class="button button--secondary button--block" href="auth-create.html"><span class="button__text">Sign Up</span></a>
                                     </div> -->
                                     <div class="auth-card__button">
-                                        <button class="button button--primary button--block" type="submit"><span class="button__text">Login</span>
+                                        <button class="button button--primary button--block" style="background-color: #f36a20; border: none;" type="submit"><span class="button__text">Login</span>
                                         </button>
                                     </div>
                                 </div>

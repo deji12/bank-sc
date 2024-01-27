@@ -1,0 +1,30 @@
+:root {
+  --color-primary: rgb(243, 106, 32);
+  --color-body-background: #F7F5F4;
+}
+
+.initial-logo, .logo {
+  background: url("/assets/basklogo.svg") left center no-repeat;
+  width: 200px;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  background: var(--color-body-background);
+  overflow: auto;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-start {
+  border-radius: 4px 0 0 4px !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-end {
+  border-radius: 0 4px 4px 0 !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #CCCCCC;
+  background-color: var(--white);
+}

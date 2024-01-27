@@ -140,7 +140,7 @@ MINIMUM_DEPOSIT_AMOUNT = 10
 MINIMUM_WITHDRAWAL_AMOUNT = 10
 
 # Login redirect
-LOGIN_URL = 'coapp-login'
+LOGIN_URL = 'core-login'
 
 # Celery Settings
 # CELERY_BROKER_URL = 'redis://localhost:6379'

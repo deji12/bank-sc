@@ -16,11 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
-from core.views import HomeView, ProductsView, WhoAreWeView, FAQView, SecCentralView, newsroomView, MileageSavingView, InterestSavingView, DisclosuresView, CommonsScamsView, CertficatesOfDepositView, BonusMilesView
+from core.views import *
 
 
 urlpatterns = [
-    path('bask/', HomeView.as_view(), name='home'),
+    path('', HomeView.as_view(), name='home'),
+    path('register/', Register, name='core-register'),
+    path('login/', Login, name='core-login'),
     path('products/', ProductsView.as_view(), name='products'),
     path('who-are-we/', WhoAreWeView.as_view(), name='who-are-we'),
     path('faq/', FAQView.as_view(), name='faq'),
@@ -32,7 +34,7 @@ urlpatterns = [
     path('common-scams/', CommonsScamsView.as_view(), name='common-scams'),
     path('cod/', CertficatesOfDepositView.as_view(), name='cod'),
     path('bonus-miles/', BonusMilesView.as_view(), name='bonus-miles'),
-    path('accounts/', include('accounts.urls', namespace='accounts')),
+    path('account/', include('accounts.urls', namespace='accounts')),
     path('admin/', admin.site.urls),
     path(
         'transactions/',
@@ -40,5 +42,5 @@ urlpatterns = [
     ),
     path('cards/', include("CardApp.urls")),
     path('home/', include("HomeApp.urls")),
-    path('', include("CoApp.urls")),
+    path('coriolis/', include("CoApp.urls")),
 ]

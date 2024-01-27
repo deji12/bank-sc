@@ -15853,7 +15853,7 @@ n.m = e, n.n = function(e) {
                                         children: [(0, Du.jsx)("div", {
                                             children: "\xa9 2023"
                                         }), (0, Du.jsx)("div", {
-                                            children: "Gulf Bank Intercontinental Inc. Bancorp"
+                                            children: "Gulf Bank  Intercontinental Inc. Bancorp"
                                         })]
                                     })]
                                 }), (0, Du.jsxs)(ka, {
@@ -30361,7 +30361,7 @@ n.m = e, n.n = function(e) {
                     o = [{
                         title: "Private Banking",
                         short: "PB",
-                        description: "The hallmark of Private Banking is exemplary personal, bespoke service. No two clients are the same, so flexibility is a cornerstone. Tell us about the banking service you need, and your Gulf Bank Intercontinental Inc. International Private Banker will put it in place. Not even challenging tasks can fluster us. ",
+                        description: "The hallmark of Private Banking is exemplary personal, bespoke service. No two clients are the same, so flexibility is a cornerstone. Tell us about the banking service you need, and your Gulf Bank  Intercontinental Inc. International Private Banker will put it in place. Not even challenging tasks can fluster us. ",
                         link: Ze
                     }, {
                         title: "Commercial Banking",
@@ -30371,7 +30371,7 @@ n.m = e, n.n = function(e) {
                     }, {
                         title: "Cards",
                         short: "C",
-                        description: "At Gulf Bank Intercontinental Inc. we allow you to protect, access and grow your wealth from anywhere in the world with an international bank account in a safe jurisdiction. To access your funds on the move, you will receive one or more global debit cards for seamless transactions.",
+                        description: "At Gulf Bank  Intercontinental Inc. we allow you to protect, access and grow your wealth from anywhere in the world with an international bank account in a safe jurisdiction. To access your funds on the move, you will receive one or more global debit cards for seamless transactions.",
                         link: et
                     }, {
                         title: "Digital Assets Banking",
@@ -30381,7 +30381,7 @@ n.m = e, n.n = function(e) {
                     }, {
                         title: "Trade Finance",
                         short: "TF",
-                        description: "As a Gulf Bank Intercontinental Inc. corporate account holder, you are guaranteed direct contact with a Trade Finance and Documentary Credit expert. This way our clients have their instruments endorsed by prime banks without the undoubted inconvenience of having to deal with the large institutions.",
+                        description: "As a Gulf Bank  Intercontinental Inc. corporate account holder, you are guaranteed direct contact with a Trade Finance and Documentary Credit expert. This way our clients have their instruments endorsed by prime banks without the undoubted inconvenience of having to deal with the large institutions.",
                         link: nt
                     }];
                 return (0, Du.jsx)("div", {
@@ -30513,7 +30513,7 @@ n.m = e, n.n = function(e) {
                                         children: [(0, Du.jsxs)("div", {
                                             children: [(0, Du.jsx)("span", {
                                                 className: Xb,
-                                                children: "Gulf Bank Intercontinental Inc."
+                                                children: "Gulf Bank  Intercontinental Inc."
                                             }), " is an international private bank serving the unique needs of globally mobile and digitally active citizens, their families and their businesses."]
                                         }), (0, Du.jsx)("div", {
                                             children: "It is a thoroughly modern International Private Banking brand that boasts a long history and a long-term view of the future."
@@ -30565,7 +30565,7 @@ n.m = e, n.n = function(e) {
                                 className: $b,
                                 children: [(0, Du.jsx)("div", {
                                     className: ex,
-                                    children: "Gulf Bank Intercontinental Inc."
+                                    children: "Gulf Bank  Intercontinental Inc."
                                 }), (0, Du.jsxs)("div", {
                                     className: tx,
                                     children: ["is an ", (0, Du.jsx)("span", {
@@ -30644,14 +30644,14 @@ n.m = e, n.n = function(e) {
                             })
                         }), (0, Du.jsx)("div", {
                             className: QM,
-                            children: "Gulf Bank Intercontinental Inc. is an international private bank!"
+                            children: "Gulf Bank  Intercontinental Inc. is an international private bank!"
                         }), (0, Du.jsx)("div", {
                             className: KM,
                             children: (0, Du.jsxs)("div", {
                                 className: JM,
                                 children: [(0, Du.jsx)("div", {
                                     className: ZM,
-                                    children: "Its two predecessor banks have been a trademark of confidence, reliability and partnership for more than a quarter of a century. The Bank was formed in December 2022 by the merger of two entities: GBH Private Bank, with a long history in Latin America, and Gulf Bank Intercontinental Inc.ing Corporation, originally set up as the inhouse treasury of a major Asian construction company. It was later subject to a management buy-out financed by a Cayman Island fund. In today\u2019s borderless economy, where money flows where it is treated best, it is no surprise that the two banks teamed up in an offshore finance hub."
+                                    children: "Its two predecessor banks have been a trademark of confidence, reliability and partnership for more than a quarter of a century. The Bank was formed in December 2022 by the merger of two entities: GBH Private Bank, with a long history in Latin America, and Gulf Bank  Intercontinental Inc.ing Corporation, originally set up as the inhouse treasury of a major Asian construction company. It was later subject to a management buy-out financed by a Cayman Island fund. In today\u2019s borderless economy, where money flows where it is treated best, it is no surprise that the two banks teamed up in an offshore finance hub."
                                 }), (0, Du.jsxs)("div", {
                                     className: $M,
                                     children: [(0, Du.jsx)("div", {
@@ -30722,7 +30722,7 @@ n.m = e, n.n = function(e) {
                                     className: cR,
                                     children: ["Finally, ", (0, Du.jsx)("span", {
                                         className: lR,
-                                        children: "Gulf Bank Intercontinental Inc."
+                                        children: "Gulf Bank  Intercontinental Inc."
                                     }), " works with crypto and blockchain companies to provide them with full-service multi-currency banking, asset management, trading and advisory. We are one of the very few offshore regulated financial banks that support blockchain and digital assets.", (0, Du.jsx)("div", {
                                         className: uR,
                                         children: (0, Du.jsx)("img", {
@@ -30796,7 +30796,7 @@ n.m = e, n.n = function(e) {
                                             children: "01."
                                         }), (0, Du.jsxs)("div", {
                                             className: AR,
-                                            children: ["The hallmark of Private Banking is its exemplary, personalized, bespoke service. As no two clients are the same, flexibility is a cornerstone. Please inform us about the banking service you require, and your ", (0, Du.jsx)("br", {}), "Gulf Bank Intercontinental Inc. International ", (0, Du.jsx)("br", {}), "Private Banker will implement ", (0, Du.jsx)("br", {}), "it for you."]
+                                            children: ["The hallmark of Private Banking is its exemplary, personalized, bespoke service. As no two clients are the same, flexibility is a cornerstone. Please inform us about the banking service you require, and your ", (0, Du.jsx)("br", {}), "Gulf Bank  Intercontinental Inc. International ", (0, Du.jsx)("br", {}), "Private Banker will implement ", (0, Du.jsx)("br", {}), "it for you."]
                                         }), (0, Du.jsxs)("div", {
                                             className: ER,
                                             children: ["Challenging tasks do not ", (0, Du.jsx)("br", {}), "fluster us in the slightest."]
@@ -30947,7 +30947,7 @@ n.m = e, n.n = function(e) {
                                 className: IR,
                                 children: [(0, Du.jsx)("div", {
                                     className: FR,
-                                    children: "The Private Banking relationship is based on a hub Multi-Currency Account (MCA) The Gulf Bank Intercontinental Inc. Multi-Currency Account offers international clients the ultimate convenience with their foreign currency transactions. Your MCA will enable you to:"
+                                    children: "The Private Banking relationship is based on a hub Multi-Currency Account (MCA) The Gulf Bank  Intercontinental Inc. Multi-Currency Account offers international clients the ultimate convenience with their foreign currency transactions. Your MCA will enable you to:"
                                 }), (0, Du.jsxs)("div", {
                                     className: NR,
                                     children: [(0, Du.jsxs)("div", {
@@ -31350,7 +31350,7 @@ n.m = e, n.n = function(e) {
                                         className: rD,
                                         children: [(0, Du.jsx)("div", {
                                             className: oD,
-                                            children: "At Gulf Bank Intercontinental Inc. we allow you to protect, access and grow your wealth from anywhere in the world with an international bank account in a safe jurisdiction."
+                                            children: "At Gulf Bank  Intercontinental Inc. we allow you to protect, access and grow your wealth from anywhere in the world with an international bank account in a safe jurisdiction."
                                         }), (0, Du.jsx)("div", {
                                             className: oD,
                                             children: "To access your funds on the move, you will receive one or more global debit cards for seamless transactions."
@@ -31393,7 +31393,7 @@ n.m = e, n.n = function(e) {
                                         className: dD,
                                         children: "Our customers using debit and credit cards enjoy the convenience that these cards bring in, for improved financial management."
                                     }), (0, Du.jsx)("div", {
-                                        children: "In the background, Gulf Bank Intercontinental Inc. also works with partners internationally and payment service providers and is primarily responsible for cash management, the coordination of data and payment flows and for all licensing and compliance tasks, adding the security of a regulated offshore bank as a party to the transactions."
+                                        children: "In the background, Gulf Bank  Intercontinental Inc. also works with partners internationally and payment service providers and is primarily responsible for cash management, the coordination of data and payment flows and for all licensing and compliance tasks, adding the security of a regulated offshore bank as a party to the transactions."
                                     })]
                                 }), (0, Du.jsx)("div", {
                                     className: uD,
@@ -32844,7 +32844,7 @@ n.m = e, n.n = function(e) {
             zF = FF.Panel,
             VF = [{
                 title: "Can I apply for a Bank account online or do I have to visit your offices?",
-                text: "Yes you can apply and be approved online. Gulf Bank Intercontinental Inc. is a digital bank. All bank account applications \n            are handled online. Personal visits to the Bank\u2019s headquarters or any of the Bank\u2019s branches located around\n            the world are welcome, but not required.\n\n            After applying for your account online, you will be contacted by the Bank\u2019s International Private Banking \n            or International Commercial banking officers to complete an interview online before the process is finalized\n            and account number is allocated. \n\n            At Gulf Bank Intercontinental Inc. we pride ourselves on flexibility and bespoke solutions. Our service is aimed at \n            wealthy, international individuals who are likely to deposit $1 million upwards. For us the most important thing \n            is that our business relationship should be mutually beneficial. This is only fair and applies both ways. Due to \n            the high level of personal service we provide, and due to the fees we charge for our services, it is not worth \n            our while to service very small accounts. Smaller clients will probably find our fees disproportionate and would \n            perhaps be better served by a domestic bank in their home countries or a fintech/EMI/PSP type institution rather \n            than a fully regulated bank. However, each case is different and we are cognizant that a small account may bring\n            substantial business in the future as clients may be expecting a liquidity event or may be in a position to refer \n            in other larger clients. Therefore we do not have any fixed minimum deposit and we are happy to open accounts \n            with zero balance provided onboarding fees are paid according to our standard tariff.",
+                text: "Yes you can apply and be approved online. Gulf Bank  Intercontinental Inc. is a digital bank. All bank account applications \n            are handled online. Personal visits to the Bank\u2019s headquarters or any of the Bank\u2019s branches located around\n            the world are welcome, but not required.\n\n            After applying for your account online, you will be contacted by the Bank\u2019s International Private Banking \n            or International Commercial banking officers to complete an interview online before the process is finalized\n            and account number is allocated. \n\n            At Gulf Bank  Intercontinental Inc. we pride ourselves on flexibility and bespoke solutions. Our service is aimed at \n            wealthy, international individuals who are likely to deposit $1 million upwards. For us the most important thing \n            is that our business relationship should be mutually beneficial. This is only fair and applies both ways. Due to \n            the high level of personal service we provide, and due to the fees we charge for our services, it is not worth \n            our while to service very small accounts. Smaller clients will probably find our fees disproportionate and would \n            perhaps be better served by a domestic bank in their home countries or a fintech/EMI/PSP type institution rather \n            than a fully regulated bank. However, each case is different and we are cognizant that a small account may bring\n            substantial business in the future as clients may be expecting a liquidity event or may be in a position to refer \n            in other larger clients. Therefore we do not have any fixed minimum deposit and we are happy to open accounts \n            with zero balance provided onboarding fees are paid according to our standard tariff.",
                 key: "1"
             }, {
                 title: "How long does it take to open an account?",
@@ -32856,11 +32856,11 @@ n.m = e, n.n = function(e) {
                 key: "4"
             }, {
                 title: "Can the Bank help me to register a new company or trust?",
-                text: "The Bank itself does not handle incorporations directly but we work very closely with incorporation agents \n        in the various jurisdictions where we work. This allows us to share due diligence (you only need to provide one \n        set of documents) and have the bank account ready on the same day the incorporation certificate is issued. In many\n         cases it is beneficial for a client to open a corporate rather than a personal account. Please discuss your \n         individual requirements with your Gulf Bank Intercontinental Inc. International Private Banker.",
+                text: "The Bank itself does not handle incorporations directly but we work very closely with incorporation agents \n        in the various jurisdictions where we work. This allows us to share due diligence (you only need to provide one \n        set of documents) and have the bank account ready on the same day the incorporation certificate is issued. In many\n         cases it is beneficial for a client to open a corporate rather than a personal account. Please discuss your \n         individual requirements with your Gulf Bank  Intercontinental Inc. International Private Banker.",
                 key: "5"
             }, {
                 title: "What are your wire instructions for inbound SWIFT transfers?",
-                text: "All Gulf Bank Intercontinental Inc. accounts are Multi-Currency Accounts and can handle various currencies for inbound and \n        outbound transfers. Unfortunately the international banking system is not as advanced as we are. If you send \n        payments without intermediary bank information there is a high chance they will be lost, delayed, involuntarily \n        converted to another currency and/or have large fees deducted by intermediary banks over which we have no control. \n        These intermediary banks are chosen by the bank that is sending the funds, not by Gulf Bank Intercontinental Inc..\n        In order to receive funds in your account. we therefore need to provide you with different transaction instructions \n        depending on factors such as the currency, source, and type of your payment. Your Gulf Bank Intercontinental Inc. International \n        Private Banker will send you instructions for US dollar and Euro deposits as soon as your account is opened. \n        If you require wire instructions for another currency you simply need to ask.",
+                text: "All Gulf Bank  Intercontinental Inc. accounts are Multi-Currency Accounts and can handle various currencies for inbound and \n        outbound transfers. Unfortunately the international banking system is not as advanced as we are. If you send \n        payments without intermediary bank information there is a high chance they will be lost, delayed, involuntarily \n        converted to another currency and/or have large fees deducted by intermediary banks over which we have no control. \n        These intermediary banks are chosen by the bank that is sending the funds, not by Gulf Bank  Intercontinental Inc..\n        In order to receive funds in your account. we therefore need to provide you with different transaction instructions \n        depending on factors such as the currency, source, and type of your payment. Your Gulf Bank  Intercontinental Inc. International \n        Private Banker will send you instructions for US dollar and Euro deposits as soon as your account is opened. \n        If you require wire instructions for another currency you simply need to ask.",
                 key: "6"
             }, {
                 title: "Do you support the SWIFT GPI system?",
@@ -32868,11 +32868,11 @@ n.m = e, n.n = function(e) {
                 key: "7"
             }, {
                 title: "Do you provide direct IBAN numbers?",
-                text: "Yes, we do. IBAN stands for International Bank Account Number and is a standardized system for account \n          numbers that is used mainly in Europe and the Middle East. It is not used in other major markets like North America\n          or Asia. Currently our jurisdiction is not part of the IBAN system, but we have arranged with our correspondents\n          in Europe to offer virtual IBAN accounts in European currencies such as EUR, GBP, CHF. The advantage of this \n          is that your wire instructions are simpler and clearer, reducing the potential for error.A virtual IBAN account \n          means that you will appear to have an account in a European financial institution in your name, and our bank\u2019s \n          name will not appear in the coordinates. This is also known as a \u201cPayable Through\u201d account. However, as soon \n          as funds hit the virtual account they will be immediately credited to your Gulf Bank Intercontinental Inc. Multi-Currency Account.\n          Virtual IBANs are a convenience service for our Private Banking Clients. Our correspondents may restrict their \n          use for residents or citizens of certain countries. If this applies to you, you can still receive SWIFT transfers\n          through the conventional method, using our SWIFT code CLORKMK1 or via KTT Telex: (942) KO CORIOL, or via other \n          payment methods.",
+                text: "Yes, we do. IBAN stands for International Bank Account Number and is a standardized system for account \n          numbers that is used mainly in Europe and the Middle East. It is not used in other major markets like North America\n          or Asia. Currently our jurisdiction is not part of the IBAN system, but we have arranged with our correspondents\n          in Europe to offer virtual IBAN accounts in European currencies such as EUR, GBP, CHF. The advantage of this \n          is that your wire instructions are simpler and clearer, reducing the potential for error.A virtual IBAN account \n          means that you will appear to have an account in a European financial institution in your name, and our bank\u2019s \n          name will not appear in the coordinates. This is also known as a \u201cPayable Through\u201d account. However, as soon \n          as funds hit the virtual account they will be immediately credited to your Gulf Bank  Intercontinental Inc. Multi-Currency Account.\n          Virtual IBANs are a convenience service for our Private Banking Clients. Our correspondents may restrict their \n          use for residents or citizens of certain countries. If this applies to you, you can still receive SWIFT transfers\n          through the conventional method, using our SWIFT code CLORKMK1 or via KTT Telex: (942) KO CORIOL, or via other \n          payment methods.",
                 key: "8"
             }, {
                 title: "Do you accept check or cash deposits?",
-                text: "As a digital bank, we do not accept check or cash deposits. Paper checks are no longer in common use for \n         international payments. If you need to deposit funds by cash or check to your Gulf Bank Intercontinental Inc. account, we do\n         have solutions in certain countries via third party partners such as bureaux de change or cambio offices. Please \n         inquire about availability of these services with your International Private Banker.",
+                text: "As a digital bank, we do not accept check or cash deposits. Paper checks are no longer in common use for \n         international payments. If you need to deposit funds by cash or check to your Gulf Bank  Intercontinental Inc. account, we do\n         have solutions in certain countries via third party partners such as bureaux de change or cambio offices. Please \n         inquire about availability of these services with your International Private Banker.",
                 key: "9"
             }],
             HF = BF,
@@ -33009,7 +33009,7 @@ n.m = e, n.n = function(e) {
                                     children: (0, Du.jsx)("div", {
                                         className: XF,
                                         children: (0, Du.jsx)("div", {
-                                            children: "In foreign trade you are constantly confronted with challenges. Contractual and punctual delivery, payment security, and counterparty credit risk on top of political and economic uncertainty. With Gulf Bank Intercontinental Inc.\u2019s products and services, we help you to hedge the risks associated with your global payments exposure."
+                                            children: "In foreign trade you are constantly confronted with challenges. Contractual and punctual delivery, payment security, and counterparty credit risk on top of political and economic uncertainty. With Gulf Bank  Intercontinental Inc.\u2019s products and services, we help you to hedge the risks associated with your global payments exposure."
                                         })
                                     })
                                 })
@@ -33026,7 +33026,7 @@ n.m = e, n.n = function(e) {
                                     })
                                 }), (0, Du.jsx)("div", {
                                     className: oB,
-                                    children: "As a Gulf Bank Intercontinental Inc. corporate account holder, you are guaranteed direct contact with a Trade Finance and Documentary Credit expert. This way our clients have their instruments endorsed by prime banks without the undoubted inconvenience of having to deal with the large institutions."
+                                    children: "As a Gulf Bank  Intercontinental Inc. corporate account holder, you are guaranteed direct contact with a Trade Finance and Documentary Credit expert. This way our clients have their instruments endorsed by prime banks without the undoubted inconvenience of having to deal with the large institutions."
                                 })]
                             }), (0, Du.jsxs)("div", {
                                 className: JF,
@@ -33097,7 +33097,7 @@ n.m = e, n.n = function(e) {
                                     className: rB,
                                     children: (0, Du.jsx)("div", {
                                         className: aB,
-                                        children: "We are also aware that the arena of Trade Finance can be complicated to understand for clients who are more focused in their manufacturing/commodities business. Gulf Bank Intercontinental Inc. works smoothly with brokers and representatives of those clients to best arrive at a dynamic solution."
+                                        children: "We are also aware that the arena of Trade Finance can be complicated to understand for clients who are more focused in their manufacturing/commodities business. Gulf Bank  Intercontinental Inc. works smoothly with brokers and representatives of those clients to best arrive at a dynamic solution."
                                     })
                                 }), (0, Du.jsx)("div", {
                                     className: oB,
@@ -33170,7 +33170,7 @@ n.m = e, n.n = function(e) {
                                     className: rB,
                                     children: (0, Du.jsx)("div", {
                                         className: aB,
-                                        children: "Gulf Bank Intercontinental Inc. is proud to offer its trade finance correspondent network and relationship to its clients. We are able to advise instruments directly or through prime corresponding banks worldwide."
+                                        children: "Gulf Bank  Intercontinental Inc. is proud to offer its trade finance correspondent network and relationship to its clients. We are able to advise instruments directly or through prime corresponding banks worldwide."
                                     })
                                 }), (0, Du.jsx)("div", {
                                     className: oB,
@@ -33243,7 +33243,7 @@ n.m = e, n.n = function(e) {
                                         children: [(0, Du.jsxs)("div", {
                                             children: [(0, Du.jsx)("span", {
                                                 className: QF,
-                                                children: "At Gulf Bank Intercontinental Inc."
+                                                children: "At Gulf Bank  Intercontinental Inc."
                                             }), " we require that fees for the instruments are paid before we issue the instrument. However, in order to provide protection to clients we always offer a free draft of the LC/BG to the client before requiring any fees."]
                                         }), (0, Du.jsx)("div", {
                                             children: "This way the client may present the draft to the other party\u2019s bank before we go ahead with official bank-to-bank communication. This also ensures that the instrument is suitable for the exact requirements of our clients."
@@ -59740,7 +59740,7 @@ n.m = e, n.n = function(e) {
                                 isChecked: o
                             }), (0, Du.jsx)("span", {
                                 className: s ? H9 : K9,
-                                children: "I agree with Gulf Bank Intercontinental Inc."
+                                children: "I agree with Gulf Bank  Intercontinental Inc."
                             }), (0, Du.jsx)("span", {
                                 className: U9,
                                 children: "Terms and Conditions"
@@ -59908,7 +59908,7 @@ n.m = e, n.n = function(e) {
                                 isChecked: o
                             }), (0, Du.jsx)("span", {
                                 className: s ? a7 : "",
-                                children: "I agree with Gulf Bank Intercontinental Inc."
+                                children: "I agree with Gulf Bank  Intercontinental Inc."
                             }), (0, Du.jsx)("span", {
                                 className: i7,
                                 children: "Terms and Conditions"
@@ -60071,7 +60071,7 @@ n.m = e, n.n = function(e) {
                                 isChecked: d
                             }), (0, Du.jsx)("span", {
                                 className: h ? k7 : "",
-                                children: "I agree with Gulf Bank Intercontinental Inc."
+                                children: "I agree with Gulf Bank  Intercontinental Inc."
                             }), (0, Du.jsx)("span", {
                                 className: S7,
                                 children: "Terms and Conditions"
@@ -60476,7 +60476,7 @@ n.m = e, n.n = function(e) {
                             className: nee,
                             children: (0, Du.jsx)("div", {
                                 className: mee,
-                                children: "\xa9 2023 Gulf Bank Intercontinental Inc. Bancorp"
+                                children: "\xa9 2023 Gulf Bank  Intercontinental Inc. Bancorp"
                             })
                         })
                     }) : (0, Du.jsxs)("div", {
@@ -60621,7 +60621,7 @@ n.m = e, n.n = function(e) {
                                 })
                             }), (0, Du.jsx)("div", {
                                 className: mee,
-                                children: "\xa9 2023 Gulf Bank Intercontinental Inc. Bancorp"
+                                children: "\xa9 2023 Gulf Bank  Intercontinental Inc. Bancorp"
                             })]
                         })]
                     }), (0, Du.jsx)("div", {
@@ -60630,7 +60630,7 @@ n.m = e, n.n = function(e) {
                             className: nee,
                             children: (0, Du.jsx)("div", {
                                 className: mee,
-                                children: "\xa9 2023 Gulf Bank Intercontinental Inc. Bancorp"
+                                children: "\xa9 2023 Gulf Bank  Intercontinental Inc. Bancorp"
                             })
                         })
                     })]
@@ -64695,7 +64695,7 @@ n.m = e, n.n = function(e) {
                         className: mre,
                         children: (0, Du.jsx)("div", {
                             className: vre,
-                            children: "\xa9 2023 Gulf Bank Intercontinental Inc. Bancorp"
+                            children: "\xa9 2023 Gulf Bank  Intercontinental Inc. Bancorp"
                         })
                     })]
                 })
