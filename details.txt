@@ -1,2 +1,9 @@
 server 1: 
     xLgbx95C0JvA1BdM83
+
+
+activate:
+    source /opt/myproject/bin/activate
+
+run:
+    gunicorn --bind 155.94.160.110:8000 banking_system.wsgi
