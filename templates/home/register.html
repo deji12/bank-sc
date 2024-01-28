@@ -39,8 +39,8 @@
   </style>
   {% load static %}
 
-    <link rel="stylesheet" href="styles.36ed50df855a87a1.css">
-  <link rel="stylesheet" href="{% static 'newest/bask-loading-theme.css' %}">
+  <link rel="stylesheet" href="{% static 'newest/styles.36ed50df855a87a1.css' %}" ">
+  <!-- <link rel="stylesheet" href="{% static 'newest/bask-loading-theme.css' %}"> -->
   <style>
     [_nghost-huf-c116] {
       display: flex;
@@ -3705,7 +3705,13 @@
 </head>
 
 <body class="">
-  <app-root class="mat-typography flex-container" _nghost-huf-c116="" ng-version="13.3.12"
+  <noscript>
+    <div class="mat-typography" style="padding: 5px;">
+      Javascript must be enabled to use this application.
+    </div>
+  </noscript>
+
+  <app-root class="mat-typography flex-container"
     style="flex-direction: column; box-sizing: border-box; display: flex;"><!----><!----><app-header
       _ngcontent-huf-c116="" id="header" fxlayout="row" class="header-container ng-star-inserted" _nghost-huf-c120=""
       style="flex-direction: row; box-sizing: border-box; display: flex;"><mat-toolbar _ngcontent-huf-c120=""
@@ -3842,8 +3848,8 @@
                 
                 <form action="" method="POST" id="application-form" enctype="multipart/form-data">
                   {% csrf_token %}
-                  <div _ngcontent-huf-c200="" class="ng-star-inserted">
-                    <div _ngcontent-huf-c200="" class="ng-star-inserted">
+                  <div class="ng-star-inserted">
+                    <div class="ng-star-inserted">
 
 
 
@@ -3851,9 +3857,7 @@
               
                         <app-tell-us-about-yourself
                           _ngcontent-huf-c200="" _nghost-huf-c196="" class="ng-pristine ng-invalid ng-touched">
-                          <div _ngcontent-huf-c196="" class="section-label">
-                            <div _ngcontent-huf-c196="" class="review_edit-area"><!----><!----></div>
-                          </div>
+                  
                           
                             <h3 _ngcontent-huf-c196="" class="section-sub-label">Personal Details</h3>
                             <div _ngcontent-huf-c196="" fxlayout="row" fxlayout.xs="column"
@@ -3869,7 +3873,8 @@
                               style="flex-direction: row; box-sizing: border-box; display: flex; place-content: center flex-end; align-items: center;">
                               <span _ngcontent-huf-c196="" class="required-indicator ng-star-inserted">* Required
                                 Fields</span><!----></div>
-                            <div _ngcontent-huf-c196="" fxlayout="row" fxlayout.xs="column"
+
+                            <div fxlayout="row" 
                               fxlayoutalign="space-between stretch" fxlayoutgap="10px"
                               style="flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-between; align-items: stretch; max-height: 100%;">
                               <div _ngcontent-huf-c196="" fxflex="27" fxlayout="column" fxlayoutalign="end start"
@@ -4019,9 +4024,8 @@
                                         <div class="mat-form-field-outline-gap ng-tns-c23-21" style="width: 0px;"></div>
                                         <div class="mat-form-field-outline-end ng-tns-c23-21"></div>
                                       </div><!----><!----><!---->
-                                      <div class="mat-form-field-infix ng-tns-c23-21"><input _ngcontent-huf-c196=""
-                                          matinput="" type="text" name="country" {% if country %} value="{{country}}" {% endif %} id="city" maxlength="24" formcontrolname="city"
-                                          autocomplete="false" required="" data-dd-privacy="mask-user-input"
+                                      <div class="mat-form-field-infix ng-tns-c23-21"><input type="text" name="country" {% if country %} value="{{country}}" {% endif %} id="city" maxlength="24" formcontrol name="city"
+                                          autocomplete="false" required 
                                           class="mat-input-element mat-form-field-autofill-control ng-tns-c23-21 ng-untouched ng-pristine ng-invalid cdk-text-field-autofill-monitored"
                                           aria-required="true"><span
                                           class="mat-form-field-label-wrapper ng-tns-c23-21"><!----></span></div><!---->
@@ -4056,9 +4060,8 @@
                                         <div class="mat-form-field-outline-gap ng-tns-c23-21" style="width: 0px;"></div>
                                         <div class="mat-form-field-outline-end ng-tns-c23-21"></div>
                                       </div><!----><!----><!---->
-                                      <div class="mat-form-field-infix ng-tns-c23-21"><input _ngcontent-huf-c196=""
-                                          matinput="" type="text" name="state" {% if state %} value="{{state}}" {% endif %} id="city" maxlength="24" formcontrolname="city"
-                                          autocomplete="false" required="" data-dd-privacy="mask-user-input"
+                                      <div class="mat-form-field-infix ng-tns-c23-21"><input type="text" name="state" {% if state %} value="{{state}}" {% endif %}  maxlength="24" formcontrolname="city"
+                                          autocomplete="false" required
                                           class="mat-input-element mat-form-field-autofill-control ng-tns-c23-21 ng-untouched ng-pristine ng-invalid cdk-text-field-autofill-monitored"
                                           aria-required="true"><span
                                           class="mat-form-field-label-wrapper ng-tns-c23-21"><!----></span></div><!---->
@@ -4101,9 +4104,8 @@
                                         <div class="mat-form-field-outline-gap ng-tns-c23-21" style="width: 0px;"></div>
                                         <div class="mat-form-field-outline-end ng-tns-c23-21"></div>
                                       </div><!----><!----><!---->
-                                      <div class="mat-form-field-infix ng-tns-c23-21"><input _ngcontent-huf-c196=""
-                                          matinput="" type="text" name="city" {% if city %} value="{{city}}" {% endif %} id="city" maxlength="24" formcontrolname="city"
-                                          autocomplete="false" required="" data-dd-privacy="mask-user-input"
+                                      <div class="mat-form-field-infix ng-tns-c23-21"><input type="text" name="city" {% if city %} value="{{city}}" {% endif %} maxlength="24" formcontrolname="city"
+                                          autocomplete="false" required 
                                           class="mat-input-element mat-form-field-autofill-control ng-tns-c23-21 ng-untouched ng-pristine ng-invalid cdk-text-field-autofill-monitored"
                                           aria-required="true"><span
                                           class="mat-form-field-label-wrapper ng-tns-c23-21"><!----></span></div><!---->
@@ -4139,7 +4141,7 @@
                                         <div class="mat-form-field-outline-end ng-tns-c23-21"></div>
                                       </div><!----><!----><!---->
                                       <div class="mat-form-field-infix ng-tns-c23-21"><input _ngcontent-huf-c196=""
-                                          matinput="" type="text" name="zip_code" {% if zip_code %} value="{{zip_code}}" {% endif %} id="city" maxlength="24" formcontrolname="city"
+                                          matinput="" type="text" name="zip_code" {% if zip_code %} value="{{zip_code}}" {% endif %} maxlength="24" formcontrolname="city"
                                           autocomplete="false" required="" data-dd-privacy="mask-user-input"
                                           class="mat-input-element mat-form-field-autofill-control ng-tns-c23-21 ng-untouched ng-pristine ng-invalid cdk-text-field-autofill-monitored"
                                           aria-required="true"><span
@@ -4323,10 +4325,10 @@
                                           <div class="mat-form-field-outline-gap ng-tns-c23-17" style="width: 0px;"></div>
                                           <div class="mat-form-field-outline-end ng-tns-c23-17"></div>
                                         </div><!----><!----><!---->
-                                        <div class="mat-form-field-infix ng-tns-c23-17"><input _ngcontent-huf-c196=""
-                                            matinput="" mask="000-000-0000" id="phone" name="phone_number" {% if phone_number %} value="{{phone_number}}" {% endif %}
+                                        <div class="mat-form-field-infix ng-tns-c23-17"><input
+                                             mask="000-000-0000" id="phone" name="phone_number" {% if phone_number %} value="{{phone_number}}" {% endif %}
                                             formcontrolname="phoneNumber" type="tel" autocomplete="off"
-                                            data-dd-privacy="mask-user-input"
+                                            
                                             class="mat-input-element mat-form-field-autofill-control ng-tns-c23-17 ng-untouched ng-pristine ng-invalid cdk-text-field-autofill-monitored"
                                             required="" aria-required="true" aria-invalid="false"><span
                                             class="mat-form-field-label-wrapper ng-tns-c23-17"><!----></span></div><!---->
@@ -4536,7 +4538,7 @@
                                           <div class="mat-form-field-outline-end ng-tns-c23-17"></div>
                                         </div><!----><!----><!---->
                                         <div class="mat-form-field-infix ng-tns-c23-17"><input _ngcontent-huf-c196=""
-                                            matinput="" placeholder="Enter ID of file" mask="example@gmail.com" id="phone" name="id_number" {% if id_number %} value="{{id_number}}"  {% endif %}
+                                            matinput="" placeholder="Enter ID of file" mask="example@gmail.com" name="id_number" {% if id_number %} value="{{id_number}}"  {% endif %}
                                             formcontrolname="phoneNumber" type="text" autocomplete="off"
                                             data-dd-privacy="mask-user-input"
                                             class="mat-input-element mat-form-field-autofill-control ng-tns-c23-17 ng-untouched ng-pristine ng-invalid cdk-text-field-autofill-monitored"
