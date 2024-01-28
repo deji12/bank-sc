@@ -6,4 +6,13 @@ activate:
     source /opt/myproject/bin/activate
 
 run:
-    gunicorn --bind 155.94.160.110:8000 banking_system.wsgi
+    gunicorn --bind 0.0.0.0:8001 banking_system.wsgi
+    python manage.py runserver 0.0.0.0:8001
+
+cd opt/myproject/myproject/bank-sc/
+
+sudo nano /etc/nginx/sites-available/myproject
+
+pkill gunicorn
+
+sudo service nginx restart
