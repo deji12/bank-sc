@@ -528,10 +528,12 @@
         <main class="page-auth">
             <div class="page-auth__center">
                 <div class="page-auth__screen">
+                   <a href="{% url 'home' %}">
                     <div class="auth-logo">
                         <img class="auth-logo__icon" src="{% static 'newest/gib3.png' %}" width="100" alt="#" />
                         <div class="auth-logo__text"></div>
                     </div>
+                   </a>
                     <img class="page-auth__screen-bg auth-bg-image-light" src="https://res.cloudinary.com/dtzxi7n7o/image/upload/v1672380082/auth-bg_l615dw.jpg" alt="#">
                     <img class="page-auth__screen-bg auth-bg-image-dark" src="img/content/auth-bg-dark.jpg" alt="#">
                 </div>
@@ -539,10 +541,12 @@
                     <div class="card__wrapper">
                         <div class="auth-card__left">
                             <div class="auth-card__logo">
-                                <div class="auth-logo">
-                                    <img class="auth-logo__icon" style="width: 80%;" src="{% static 'newest/gib3.png' %}" width="100" alt="#" />
-                                    <div class="auth-logo__text"></div>
-                                </div>
+                                <a href="{% url 'home' %}">
+                                    <div class="auth-logo">
+                                        <img class="auth-logo__icon" style="width: 80%;" src="{% static 'newest/gib3.png' %}" width="100" alt="#" />
+                                        <div class="auth-logo__text"></div>
+                                    </div>
+                                </a>
                             </div>
                             <img class="auth-card__bg auth-bg-image-light" src="https://res.cloudinary.com/dtzxi7n7o/image/upload/v1672380082/auth-bg_l615dw.jpg" alt="#">
                             <img class="auth-card__bg auth-bg-image-dark" src="img/content/auth-bg-dark.jpg" alt="#">
@@ -550,7 +554,7 @@
                         <form class="auth-card__right" method="POST">
                             {% csrf_token %}
                             <div class="auth-card__top">
-                                <h1 class="auth-card__title">Welcome to <span style="color: #f36a20;">Gulf Bank </span></h1>
+                                <h1 class="auth-card__title">Welcome to <a href="{% url 'home' %}"><span style="color: #f36a20;">Gulf Bank </span></a></h1>
                                 {% if messages %}
                                     {% for message in messages %}
                                         <h1 class="auth-card__title"> <span style="color: firebrick;">{{message}}</span></h1>
