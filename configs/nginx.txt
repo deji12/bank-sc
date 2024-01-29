@@ -1,30 +1,3 @@
-server 1: 
-    xLgbx95C0JvA1BdM83
-
-
-activate:
-    source /opt/myproject/bin/activate
-
-run:
-    gunicorn --bind 0.0.0.0:8001 banking_system.wsgi
-    python manage.py runserver 0.0.0.0:8001
-
-cd opt/myproject/myproject/bank-sc/
-
-sudo nano /etc/nginx/sites-available/myproject
-
-pkill gunicorn
-
-sudo service nginx restart
-
-sudo apt-get update
-sudo apt-get install ufw
-
-
-
-
-------------------------------
-
 server {
     listen 80;
     server_name gulfbankinc.com www.gulfbankinc.com;
@@ -43,4 +16,6 @@ server {
     }
 }
 
-----------------------------------------
+sudo nano /etc/nginx/sites-available/myproject
+
+sudo service nginx restart
