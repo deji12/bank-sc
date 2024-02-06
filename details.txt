@@ -1,6 +1,9 @@
 server 1: 
     xLgbx95C0JvA1BdM83
 
+    20643
+
+sudo certbot certonly --standalone -d gulfbankinc.com
 
 activate:
     source /opt/myproject/bin/activate
@@ -44,3 +47,15 @@ server {
 }
 
 ----------------------------------------
+
+
+<VirtualHost *:443>
+    ServerName gulfbankinc.com
+
+    SSLEngine on
+    SSLCertificateFile /etc/letsencrypt/live/gulfbankinc.com/cert.pem
+    SSLCertificateKeyFile /etc/letsencrypt/live/gulfbankinc.com/privkey.pem
+    SSLCertificateChainFile /etc/letsencrypt/live/gulfbankinc.com/chain.pem
+
+    # ... other configurations ...
+</VirtualHost>

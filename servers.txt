@@ -1,0 +1,48 @@
+Server Details
+=============================
+
+Linux 1024 MB
+
+Main IP: 37.120.239.186
+Username : root
+Password: ibumOUcC_2q%
+
+IP address allocation:
+37.120.239.186
+2001:0ac8:0022:000a:0000:0000:c7b1:faad
+
+IPV4 Hostname: 297812.MONOVM.COM
+IPV6 Hostname: ipv6.297812.MONOVM.COM
+
+SSH Access Information
+=============================
+Main IP Address: 37.120.239.186
+Server Name: 297812.MONOVM.COM
+Root Password: ibumOUcC_2q%
+
+
+
+
+
+Server Details
+=============================
+
+Linux 1024 MB
+
+Main IP: 37.120.239.154
+Username : root
+Password: g0aCfQQ#nfXL
+
+IP address allocation:
+37.120.239.154
+2001:0ac8:0022:000a:0000:0000:2e3c:375c
+
+IPV4 Hostname: 297813.MONOVM.COM
+IPV6 Hostname: ipv6.297813.MONOVM.COM
+
+SSH Access Information
+=============================
+Main IP Address: 37.120.239.154
+Server Name: 297813.MONOVM.COM
+Root Password: g0aCfQQ#nfXL
+
